@@ -70,9 +70,12 @@ def quick_sort(array_A, pivot_selection):
         Y = 0
     return (X + Y + Z)
 
-if __name__ == '__main__':
+def main():
     file_txt = open('QuickSort.txt')
     array_A = [int(line.strip('\n')) for line in file_txt.readlines()]
     comparsion = quick_sort(array_A, pivot_selection = 'median-of-three')
+    return comparsion
+
+if __name__ == '__main__':
+    comparsion = main()
     print('number of comparsions is: ', comparsion)
-    # print('sorted array is: ', array_A)
