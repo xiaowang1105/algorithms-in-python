@@ -16,7 +16,7 @@ class vertex():
     def add_find_time(self, f):
         self.find_time = f
 
-def read_graph(path = 'SCC.txt'):
+def read_graph(path='SCC.txt'):
     file_txt = open(path)
     graph = {}
     graph_reverse = {}
