@@ -1,4 +1,4 @@
-def read_graph(path = 'dijkstraData.txt'):
+def read_graph(path='dijkstraData.txt'):
     f = open(path)
     graph = {}
     for line in f.readlines():
