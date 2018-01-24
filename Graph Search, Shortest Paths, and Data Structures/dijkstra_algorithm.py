@@ -46,12 +46,16 @@ def dijkstra(graph, source):
         i = i + 1
     return dist
 
-if __name__ == '__main__':
-    test_graph = {1: [(2, 2), (3, 3)], 2: [(1, 2), (3, 2), (4, 1)],
-             3: [(1, 1), (2, 2), (4, 1)], 4: [(2, 1), (3, 1), (5, 2)],
-             5: [(4, 2)]}
+def main():
     graph = read_graph()
     print(graph.keys())
     print('running dijkstra...')
     dist = dijkstra(graph, 1)
+    return dist
+
+if __name__ == '__main__':
+    # test_graph = {1: [(2, 2), (3, 3)], 2: [(1, 2), (3, 2), (4, 1)],
+    #          3: [(1, 1), (2, 2), (4, 1)], 4: [(2, 1), (3, 1), (5, 2)],
+    #          5: [(4, 2)]}
+    dist = main()
     [print(dist[i]) for i in [7,37,59,82,99,115,133,165,188,197]]
