@@ -12,8 +12,8 @@ def find_2sum(array):
     RANGE = 10000
     out = set()
     for item in array:
-        lower = bisect.bisect_left(array, -WIDTH - i)
-        upper = bisect.bisect_right(array, WIDTH - i)
+        lower = bisect.bisect_left(array, -RANGE - i)
+        upper = bisect.bisect_right(array, RANGE - i)
         out |= set([i + j for j in array[lower:upper]])
     return out
 
