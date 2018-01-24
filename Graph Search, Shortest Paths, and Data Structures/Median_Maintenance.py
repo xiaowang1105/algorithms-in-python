@@ -93,11 +93,15 @@ def median_maintenance(low_heap, high_heap, median, item):
             median.append(high_heap.extremum())
         return median
 
-if __name__ == '__main__':
+def main():
     input_list = read_data_stream()
     low_heap = heap([])
     high_heap = heap([])
     median = []
     for item in input_list:
         median_maintenance(low_heap, high_heap, median, item)
+    return median
+
+if __name__ == '__main__':
+    median = main()
     print(sum(median)%10000)
