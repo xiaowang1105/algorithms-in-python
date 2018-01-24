@@ -101,7 +101,6 @@ def main():
     al_end_time = time.time()
     print('<-------------dfs complete: %f(s) ------------->\n'%(al_end_time - al_begin_time))
     print(components)
-    return 0
 
 if __name__ == '__main__':
     main()
