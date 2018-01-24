@@ -81,7 +81,7 @@ def scc(graph, graph_reverse):
     (vertices, order, components) = dfs(graph, order[::-1])
     return (vertices, components)
 
-if __name__ == '__main__':
+def main():
     print('<-------------loading data------------->')
     data_begin_time = time.time()
     # (graph, graph_reverse) = read_graph()
@@ -101,3 +101,7 @@ if __name__ == '__main__':
     al_end_time = time.time()
     print('<-------------dfs complete: %f(s) ------------->\n'%(al_end_time - al_begin_time))
     print(components)
+    return 0
+
+if __name__ == '__main__':
+    main()
