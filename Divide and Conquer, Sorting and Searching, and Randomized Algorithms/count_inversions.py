@@ -34,13 +34,16 @@ def sort_and_count(array_A, length):
 
     return (D, X + Y + Z)
 
+def main():
+    file_txt = open('IntegerArray.txt', 'r')
+    data_list = [int(line.strip('\n')) for line in file_txt.readlines()]
+    [sorted_list, number_inv] = sort_and_count(data_list, len(data_list))
+    return number_inv
+
 if __name__ == '__main__':
     # # test on small number
     # (result, count) = sort_and_count([10,2,3,22,33,7,4,1,2], 9)
     # print(count)
 
     # test on week assignment
-    file_txt = open('IntegerArray.txt', 'r')
-    data_list = [int(line.strip('\n')) for line in file_txt.readlines()]
-    [sorted_list, number_inv] = sort_and_count(data_list, len(data_list))
-    print('number of inversions is: ', number_inv)
+    print('number of inversions is: ', main())
