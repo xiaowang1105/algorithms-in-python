@@ -1,6 +1,9 @@
 class Job:
     '''
-    Job class has two input arguments
+    Job class has two input arguments, weight(how important) and length(how long)
+    Methods:
+        read_from_dict, class method, read job from a dictionary ( {index: (weight, length)...} )
+        read_file, process a txt file into a dictionary ( {index: (weight, length)...} )
     '''
     def __init__(self, weight, length):
         self.weight = weight
