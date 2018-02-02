@@ -1,4 +1,7 @@
 class Job:
+    '''
+    Job class has two input arguments
+    '''
     def __init__(self, weight, length):
         self.weight = weight
         self.length = length
