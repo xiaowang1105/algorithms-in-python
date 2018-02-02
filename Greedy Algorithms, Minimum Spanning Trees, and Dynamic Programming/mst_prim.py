@@ -37,6 +37,7 @@ def naive_mst_prim(weighted_graph):
     return total_cost
 
 # heap based implementation of prim algorithm
+# use class define in heap.py every element in Heap() has two arguments: index and key
 def update_queue(X, V, weighted_graph, q):
     book = q.map_book()
     q = Heap([])
