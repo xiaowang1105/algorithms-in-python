@@ -14,6 +14,7 @@ def read_from_txt(path='edges.txt'):
             weighted_graph[v2][v1] = cost # this is an undirected graph
     return (num_nodes, num_edges, weighted_graph)
 
+# naive implementaion of prim algorithm
 def naive_mst_prim(weighted_graph):
     V = list(weighted_graph.keys())
     X = [1]
@@ -31,6 +32,7 @@ def naive_mst_prim(weighted_graph):
         X.append(temp_v2)
     return total_cost
 
+# heap based implementation of prim algorithm
 def update_queue(X, V, weighted_graph, q):
     book = q.map_book()
     q = Heap([])
@@ -42,7 +44,6 @@ def update_queue(X, V, weighted_graph, q):
                 for item in set(weighted_graph[x].keys()) & set(X)])
             q.insert(Vertex(x, key))
     return q
-
 
 def heap_mst_prim(weighted_graph):
     V = list(weighted_graph.keys())
