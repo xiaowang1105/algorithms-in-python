@@ -1,6 +1,6 @@
 class Job:
     '''
-    easy application of greedy algorithms in sheduling jobs
+    Easy application of greedy algorithms in sheduling jobs
     Job class has two input arguments, weight(how important) and length(how long)
     Supported Methods:
         read_from_dict, class method, read job from a dictionary ( {index: (weight, length)...} )
