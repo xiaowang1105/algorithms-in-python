@@ -5,7 +5,7 @@ class Job:
         read_from_dict, class method, read job from a dictionary ( {index: (weight, length)...} )
         read_file, static method, process a txt file into a dictionary ( {index: (weight, length)...} )
         sort, static method, sort job list according to different operator
-        
+        completion_time, static method, calculate the weighted completion time of job list 
     '''
     def __init__(self, weight, length):
         self.weight = weight
