@@ -1,3 +1,8 @@
+'''
+Results:
+    total running time for naive implement of prim alg is 3.498716 (s)
+    total running time for heap based implement of prim alg is 1.859750 (s)
+'''
 import time
 from heap import Vertex, Heap
 
@@ -73,5 +78,6 @@ def main():
     end_time = time.time()
     print('total time for heap based implement of prim alg is %f'%(end_time - begin_time))
     assert cost1 == cost2, 'two implementation different'
+
 if __name__ == '__main__':
     main()
