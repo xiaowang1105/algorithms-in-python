@@ -50,7 +50,7 @@ def main():
     job_list = Job.sort(job_list, 'minus')
     print('greedy method is minus completion time: ', Job.completion_time(job_list))
     job_list = Job.sort(job_list, 'divide')
-    print('greedy method is didide completion time: ', Job.completion_time(job_list))
+    print('greedy method is divide completion time: ', Job.completion_time(job_list))
 
 if __name__ == '__main__':
     main()
