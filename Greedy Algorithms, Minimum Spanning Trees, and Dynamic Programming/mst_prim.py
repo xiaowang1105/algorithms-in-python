@@ -1,8 +1,6 @@
-'''
-Results:
-    total running time for naive implement of prim alg is 3.498716 (s)
-    total running time for heap based implement of prim alg is 1.859750 (s)
-'''
+# Results:
+#     total running time for naive implement of prim alg is 3.498716 (s)
+#     total running time for heap based implement of prim alg is 1.859750 (s)
 import time
 from heap import Vertex, Heap
 
