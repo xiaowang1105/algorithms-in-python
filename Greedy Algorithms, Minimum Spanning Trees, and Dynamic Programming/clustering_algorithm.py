@@ -61,7 +61,7 @@ def kruskal(matrix, vertices, stop_condition=1):
             elif len(component) == stop_condition:
                 continue
             else:
-                raise ValueError('component lenght error')
+                raise ValueError('component length error')
     # print('runnning times of if inside', value)
     flatten_T = sorted([i for item in T for i in list(item)])
     # print(len(list(set(flatten_T))), len(component))
