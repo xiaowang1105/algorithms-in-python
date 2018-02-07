@@ -36,7 +36,8 @@ def hamming_distance_clustering(vertices):
     # component = set([vertex for vertex in vertices.values()])
     num_component = len(vertices.values())
     value = 0
-    all_vertices = set(vertices.keys())
+    # Tranform dictionary_keys type into set() is crutial to boost intersection operator later
+    all_vertices = set(vertices.keys()) 
     for vertex1 in tqdm(all_vertices):
         flip_out = two_bit_flip(vertex1)
         actual_vertices = flip_out.intersection(all_vertices)
