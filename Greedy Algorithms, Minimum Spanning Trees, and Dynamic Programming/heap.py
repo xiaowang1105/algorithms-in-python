@@ -33,7 +33,7 @@ class Heap:
             temp = l
         else:
             temp = i
-        if r < self.heap_size() and self.queue[l].key < self.queue[i].key:
+        if r < self.heap_size() and self.queue[r].key < self.queue[temp].key:
             temp = r
         if temp != i:
             self.queue[i], self.queue[temp]= self.queue[temp], self.queue[i]
