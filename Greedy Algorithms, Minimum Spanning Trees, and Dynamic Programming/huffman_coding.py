@@ -100,9 +100,7 @@ def map_book(queue, tree_nodes):
         else:
             traverse(node.leftChild, bits + '0')
             traverse(node.rightChild, bits + '1')
-
     traverse(tree_root, '')
-
     return symbol2bits, bits2symbol
 
 def main():
