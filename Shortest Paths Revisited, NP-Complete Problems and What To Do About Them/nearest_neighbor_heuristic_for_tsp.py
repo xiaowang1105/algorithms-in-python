@@ -50,8 +50,6 @@ def nn_tsp(num_cities, graph):
 
     return tour_length
 
-
-
 def main():
     num_cities, graph = read_file()
     tour_length = nn_tsp(num_cities, graph)
