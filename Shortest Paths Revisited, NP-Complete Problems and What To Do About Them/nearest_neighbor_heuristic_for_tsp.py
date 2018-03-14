@@ -33,7 +33,6 @@ def find_next_city(start_city, graph, visited_cites, cities_set, tour_length):
 
     return  next_city, visited_cites, tour_length
 
-
 def nn_tsp(num_cities, graph):
     visited_cites = set([1])
     cities_set = set([i for i in range(1, num_cities + 1)])
