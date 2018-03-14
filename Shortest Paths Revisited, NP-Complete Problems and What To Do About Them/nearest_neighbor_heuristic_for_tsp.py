@@ -16,13 +16,6 @@ def euc_dist(x, y):
     distance = sqrt(pow(x[0] - y[0], 2) + pow(x[1] - y[1], 2))
     return distance
 
-# def com_dist_graph(num_cities, graph):
-#     distance_matrix = np.ones([num_cities, num_cities])
-#     for i in tqdm(range(num_cities)):
-#         for j in range(num_cities):
-#             distance_matrix[i][j] = euc_dist(graph[i + 1], graph[j + 1] )
-#     return distance_matrix
-
 def comp_shortest_dist_from_one_city(source_city, destination_cites, graph):
     dist_array = []
     for city in destination_cites:
