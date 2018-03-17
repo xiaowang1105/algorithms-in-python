@@ -19,7 +19,7 @@ One intuitive idea for sorting is to imitate how we arrange cards according to t
 
 [insert1]: ./images/insert.png
 And the worst running time for this alogorithm is $T(n)= \theta (n^{2})\,\!$. <br>
-Gif below shows how merge sort works:
+Gif above shows how merge sort works:
 ![merge][merge1]
 
 [merge1]: ./images/Merge-sort-example-300px.gif
@@ -52,3 +52,15 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 [cross1]: ./images/max_crossing1.png
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= \theta(n{\lg n})\,\!$
+
+## 2.0 - Randomized Algorithms
+### 2.1 - Quick Sort [Link](https://en.wikipedia.org/wiki/Quicksort)
+![quick][quick1]
+
+[quick1]: ./images/Sorting_quicksort_anim.gif
+<strong>Key idea</strong> <br>
+Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements relative to a randomly chosen element. Quicksort can then recursively sort the sub-arrays. So, the key point in quick sort is to choose partition element.
+<strong>Propeties</strong> <br>
+* Worst case performance	O(n^2)
+* Best case performance	O(n log n) or O(n) with three-way partition
+* Average case performance	O(n log n)
