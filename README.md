@@ -3,3 +3,4 @@ In this respository, I implemented some famous alogritms using python. I arrange
 ## 1.0 Divide and Conquer
 ### Interger Multiplication Problem [Link](https://en.wikipedia.org/wiki/Karatsuba_algorithm)
 ![icon.png](./images/integer_mult.png)
+The standard procedure for multiplication of two n-digit numbers requires a number of elementary operations proportional to $n^2$.
