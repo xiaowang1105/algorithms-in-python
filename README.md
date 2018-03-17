@@ -2,6 +2,7 @@
 In this respository, I implemented some famous alogritms using python. I arrange them according to the strategy they use. And for every algorithn, I will explain the problem they try to solve and some relevant resourses.<br>
 (The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.)
 ## 1.0 - Divide and Conquer
+This section, I will talk about the famous divide and conquer strategy and show some applications of this strategy.
 ### 1.1 - Interger Multiplication Problem [Link](https://en.wikipedia.org/wiki/Karatsuba_algorithm)
 ![Interger_MUL][Interger_MUL1]
 
@@ -54,6 +55,7 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 * Running Time: $T(n)= \theta(n{\lg n})\,\!$
 
 ## 2.0 - Randomized Algorithms
+This section I will talk about two algorithms which has used random variable inside.
 ### 2.1 - Quick Sort [Link](https://en.wikipedia.org/wiki/Quicksort)
 ![quick][quick1]
 
@@ -76,3 +78,5 @@ ${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}
 <strong>Propeties</strong> <br>
 * With high probability we can find all min cuts in the running time of $O(n^{2}\ln ^{3}n)$ 
 * Not finding a min cut probability is ${\frac {1}{n}}$ after $T={\binom  {n}{2}}\ln n$ times.
+
+## 3.0 - 
