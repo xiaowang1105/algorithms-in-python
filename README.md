@@ -39,7 +39,7 @@ As the algorithm progresses, add all the inversions will give us the total inver
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(n{\log n})\,\!$
 
-### 1.3 - Max Sub Array [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
+### 1.3 - Maximum Subarray [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
 The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum.
 <strong>Key idea</strong> <br>
 If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
