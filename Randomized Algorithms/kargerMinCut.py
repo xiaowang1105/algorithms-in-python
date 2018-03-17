@@ -1,6 +1,6 @@
 import random, copy, math, time
 
-def read_graph(path = 'kargerMinCut.txt'):
+def read_graph(path = './data/kargerMinCut.txt'):
     file_txt = open(path)
     graph = {}
     for line in file_txt.readlines():
