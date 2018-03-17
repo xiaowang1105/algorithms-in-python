@@ -38,3 +38,17 @@ Like the figure above, when we first take in element from right sub-array in mer
 As the algorithm progresses, add all the inversions will give us the total inversions.<br>
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(n{\log n})\,\!$
+
+### 1.3 - Max Sub Array [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
+The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum.
+<strong>Key idea</strong> <br>
+If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
+- A[i..j] belongs to A[low..mid]
+- A[i..j] belongs to A[mid+1..high]
+- i <= mid < j <br>
+So, our job is to find the largest sub array crossing the mid point and choose the largest one among these three algorithms.
+![cross][cross1]
+
+[cross1]: ./images/max_crossing1.png
+<strong>Propeties</strong> <br>
+* Running Time: $T(n)= \theta(n{\lg n})\,\!$
