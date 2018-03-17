@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # print(count)
 
     # test on week assignment
-    file_txt = open('IntegerArray.txt', 'r')
+    file_txt = open('./data/IntegerArray.txt', 'r')
     data_list = [int(line.strip('\n')) for line in file_txt.readlines()]
     [sorted_list, number_inv] = sort_and_count(data_list, len(data_list))
     print('number of inversions is: ', number_inv)
