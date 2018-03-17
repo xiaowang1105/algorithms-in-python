@@ -79,4 +79,21 @@ ${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}
 * With high probability we can find all min cuts in the running time of $O(n^{2}\ln ^{3}n)$ 
 * Not finding a min cut probability is ${\frac {1}{n}}$ after $T={\binom  {n}{2}}\ln n$ times.
 
-## 3.0 - 
+## 3.0 - Data Structures
+It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
+### 3.1 - Queue and Breadth First Search [Link](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics))
+Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
+![queue][queue1]
+
+[queue1]: ./images/Fifo_queue.png
+
+<strong>Key idea</strong> <br>
+And BFS is used in undirected graph and it tells how many nodes a source node can reach and print them out by the order we find them. We use queue to store the nodes we color grey(see the gif below).
+
+![bfs][bfs1]
+
+[bfs1]: ./images/Animated_BFS.gif
+
+<strong>Propeties</strong> <br>
+* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
+
