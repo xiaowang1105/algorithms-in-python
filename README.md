@@ -112,3 +112,18 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
+
+### 3.3 - Heap and Median Median Maintenance [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure%29) [Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
+Heap is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key (the value) of P is either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C.[1] The node at the "top" of the heap (with no parents) is called the root node.
+
+![heap][heap1]
+
+[heap1]: ./images/Max-Heap.png
+
+Median Maintenance problem is that if integers are read from a data stream, find median of elements read so for in efficient way. For simplicity assume there are no duplicates. <br>
+
+<strong>Key idea</strong> <br>
+We can use a max heap on left side to represent elements that are less than effective median, and a min heap on right side to represent elements that are greater than effective median. When the difference between size of two heaps is greater or equal to 2, we switch one element to another smaller size heap.
+
+<strong>Propeties</strong> <br>
+* Running Time: $T(n)= O(N log N)$
