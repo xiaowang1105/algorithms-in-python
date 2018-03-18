@@ -41,7 +41,7 @@ As the algorithm progresses, add all the inversions will give us the total inver
 * Running Time: $T(n)= O(n{\log n})\,\!$
 
 ### 1.3 - Maximum Subarray [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
-The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum.
+The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum. <br>
 <strong>Key idea</strong> <br>
 If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
 - A[i..j] belongs to A[low..mid]
@@ -81,14 +81,14 @@ ${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}
 
 ## 3.0 - Data Structures
 It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
-### 3.1 - Queue and Breadth First Search [Link](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics))
+### 3.1 - Queue and Breadth First Search [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics%29) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
 Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
 ![queue][queue1]
 
 [queue1]: ./images/Fifo_queue.png
 
 <strong>Key idea</strong> <br>
-And BFS is used in undirected graph and it tells how many nodes a source node can reach and print them out by the order we find them. We use queue to store the nodes we color grey(see the gif below).
+And BFS is used in undirected or directed graph and it tells how many nodes a source node can reach and print them out by the order we find them. We use queue to store the nodes we color grey(see the gif below). As for the "breadth" in its name, it means we try to find a reachable node using the shortest length. And the border between visited nodes and undiscovered nodes is extended by its breadth.
 
 ![bfs][bfs1]
 
@@ -97,3 +97,18 @@ And BFS is used in undirected graph and it tells how many nodes a source node ca
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
 
+### 3.2 - Stack and Depth First Search [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type%29) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
+Stack, also known as LIFO, has the property of last in, first out.
+![stack][stack1]
+
+[stack1]: ./images/Lifo_stack.png
+
+<strong>Key idea</strong> <br>
+And DFS is used in directed graph and it tells how many nodes a source node can reach and print them out by the order we find them. We use stack to store the nodes we classify as the start points for graph. The "depth" in its name means that this algorithm will go as deeply as it can for a given source and when it reaches the endpoint, it returns to the start node.
+
+![depth][depth1]
+
+[depth1]: ./images/Depth-First-Search.gif
+
+<strong>Propeties</strong> <br>
+* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
