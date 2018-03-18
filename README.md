@@ -97,7 +97,7 @@ And BFS is used in undirected or directed graph and it tells how many nodes a so
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
 
-### 3.2 - Stack and Depth First Search [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type%29) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
+### 3.2 - Stack and Depth First Search [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
 Stack, also known as LIFO, has the property of last in, first out.
 ![stack][stack1]
 
