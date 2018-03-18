@@ -81,7 +81,7 @@ ${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}
 
 ## 3.0 - Data Structures
 It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
-### 3.1 - Queue and Breadth First Search [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics%29) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
+### 3.1 - Queue and Breadth First Search [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics%)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
 Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
 ![queue][queue1]
 
