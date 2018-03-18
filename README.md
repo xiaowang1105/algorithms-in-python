@@ -29,7 +29,7 @@ Gif above shows how merge sort works:
 Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted) and repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.<br>
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(n{\log n})\,\!$
-### 1.2 - Count Inversions [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
+### 1.3 - Count Inversions [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
 Actually, this can be treated as application of Merger Sort. Every time we do merge operation in merge sort, we implicitly calculate the inversions. <br>
 ![inversion][inversion1]
 
@@ -40,7 +40,7 @@ As the algorithm progresses, add all the inversions will give us the total inver
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(n{\log n})\,\!$
 
-### 1.3 - Maximum Subarray [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
+### 1.4 - Maximum Subarray [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
 The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum. <br>
 <strong>Key idea</strong> <br>
 If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
