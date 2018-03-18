@@ -139,3 +139,24 @@ A directed graph is called strongly connected if there is a path in each directi
 Through simple observation, we find out that tranpose of graph has the same SCCs as the original graph. We run DFS twice. First time, we run it on G and compute finishing time for each vertex. And then, we run DFS on G^T but in the main loop of DFS, consider the vertices in order of decreasing finishing time. <br>
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= \theta(V+E)$, $V$ is number of vertices, $E$ is number of edges
+
+### 3.5 - Disjoint-set and SCC [Link](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
+A disjoint-set data structure, also called a union–find data structure or merge–find set, is a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. <br>
+For a naive disjoint-set, it supports two main operations, Make-Set and Union. Make-set make every vertex an independent group. Union puts two vertices in one group.
+
+![union][union1]
+
+[union1]: ./images/unionfind.png
+
+<strong>Key idea</strong> <br>
+In an undirected graph, we can use this data structure to find out how many SCCs. The figure below shows how it works.
+
+![scc_uf][scc_uf1]
+
+[scc_uf1]: ./images/uf.png
+
+
+
+<strong>Propeties</strong> <br>
+* We can use a weighted-union heuristic to save time when call find_set operation
+* Path compression can greatly improve time efficiency of union find
