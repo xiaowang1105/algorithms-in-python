@@ -81,7 +81,7 @@ ${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}
 
 ## 3.0 - Data Structures
 It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
-### 3.1 - Queue and Breadth First Search [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics%)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
+### 3.1 - Queue and Breadth First Search [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics%29) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
 Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
 ![queue][queue1]
 
@@ -97,7 +97,7 @@ And BFS is used in undirected or directed graph and it tells how many nodes a so
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
 
-### 3.2 - Stack and Depth First Search [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
+### 3.2 - Stack and Depth First Search [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type%29) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
 Stack, also known as LIFO, has the property of last in, first out.
 ![stack][stack1]
 
@@ -113,7 +113,7 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
 
-### 3.3 - Heap and Median Median Maintenance [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure%)) [Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
+### 3.3 - Heap and Median Median Maintenance [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure%29)[Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
 Heap is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key (the value) of P is either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C.[1] The node at the "top" of the heap (with no parents) is called the root node.
 
 ![heap][heap1]
@@ -127,3 +127,15 @@ We can use a max heap on left side to represent elements that are less than effe
 
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(N log N)$
+
+### 3.3 - Strongly Connected Component [Link](https://en.wikipedia.org/wiki/Strongly_connected_component)
+A directed graph is called strongly connected if there is a path in each direction between each pair of vertices of the graph. In a directed graph G that may not itself be strongly connected, a pair of vertices u and v are said to be strongly connected to each other if there is a path in each direction between them.
+
+![scc][scc1]
+
+[scc1]: ./images/Scc.png
+
+<strong>Key idea</strong> <br>
+Through simple observation, we find out that tranpose of graph has the same SCCs as the original graph. We run DFS twice. First time, we run it on G and compute finishing time for each vertex. And then, we run DFS on G^T but in the main loop of DFS, consider the vertices in order of decreasing finishing time. <br>
+<strong>Propeties</strong> <br>
+* Running Time: $T(n)= \theta(V+E)$, $V$ is number of vertices, $E$ is number of edges
