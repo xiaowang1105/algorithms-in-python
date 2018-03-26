@@ -173,6 +173,10 @@ If we sort activity by value weight/length, we can prove an existing optimal str
 
 [act1]: ./images/act1.png
 
+As the figure shown above, we consider the cost caused by two activites that are ranged differently in two arrangement (i, j). We find out that the cost in greedy alogrithm is smaller than optimal structure by the value of wi\*lj - wj\*li, which is greater than or equat to 0. 
+
+<strong>Properties</strong> <br>
+* Running time is dominated by sorting
 
 ### 4.2 - Huffman Coding [Link](https://en.wikipedia.org/wiki/Huffman_coding)
 Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. 
