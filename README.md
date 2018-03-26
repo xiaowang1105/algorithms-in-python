@@ -164,7 +164,19 @@ In an undirected graph, we can use this data structure to find out how many SCCs
 ## 4.0 - Greedy Algorithms
 In this section, I'm going to introducce greedy algorithms, one powerful algorithms design strategy. <br>
 From [Wikipedia](https://en.wikipedia.org/wiki/Greedy_algorithm), a greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage[1] with the hope of finding a global optimum. In many problems, a greedy strategy does not in general produce an optimal solution, but nonetheless a greedy heuristic may yield locally optimal solutions that approximate a global optimal solution in a reasonable time.
-### 4.1 - Huffman Coding [Link](https://en.wikipedia.org/wiki/Huffman_coding)
+### 4.1 - Shedule Activities [Link](https://en.wikipedia.org/wiki/Activity_selection_problem)
+In activity selection problem, every activity has its own weight and length. And our goal is to minimize the sum of weight\*length.
+It is a very easy and great example to show how greedy algorithm works and provide an elegant proof using argument exchange technique. <br>
+<strong>Key idea</strong> <br>
+If we sort activity by value weight/length, we can prove an existing optimal structure cannot be better than this arrangement.
+![act][act1]
+
+[act1]: ./images/act1.png
+
+
+
+
+### 4.2 - Huffman Coding [Link](https://en.wikipedia.org/wiki/Huffman_coding)
 Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. 
 For example, the table below shows letters' frequency in a "book".
 
@@ -181,7 +193,7 @@ As for huffman coding, the actual tree structure looks like this:
 
 ![huff][huff1]
 
-[huff1]: ./images/huff.png
+[huff1]: ./images/act.png
 
 <strong>Key idea</strong> <br>
 We maintain a binary tree and create a new node as the parent for two least-frequent letters. And the key for this new node is the sum of keys for its two children. We repeat this until no nodes left in this "book".
@@ -192,5 +204,3 @@ We maintain a binary tree and create a new node as the parent for two least-freq
 
 <strong>Properties</strong> <br>
 * Procedure HUFFMAN produces an optimal prefix code
-
-### 4.2 - 
