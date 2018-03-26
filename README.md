@@ -219,3 +219,17 @@ We maintain a binary tree and create a new node as the parent for two least-freq
 
 <strong>Properties</strong> <br>
 * Procedure HUFFMAN produces an optimal prefix code
+
+### 4.4 - Dijkstra's Algorithm [Link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+
+Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph. However, it has one prerequisite, all paths have to be greater or equal to 0.
+
+![dij][dij1]
+
+[dij1]: ./images/Dijkstra_Animation.gif
+
+<strong>Key idea</strong> <br>
+Seperate nodes into two groups, one group is marked as explored. And we update the distance from unexplored group to explored group by the shortest distance.
+
+<strong>Properties</strong> <br>
+* Running time  $ O(|E|+|V|\log |V|)$ based on a min-priority queue implemented by a Fibonacci heap
