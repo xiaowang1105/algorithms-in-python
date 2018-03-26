@@ -173,7 +173,7 @@ If we sort activity by value weight/length, we can prove an existing optimal str
 
 [act1]: ./images/act1.png
 
-<img src=" ./images/act1.png" width = "300" height = "300" alt="图片名称" align=center />
+<img src=" ./images/act1.png" style="zoom:50%" />
 
 
 ### 4.2 - Huffman Coding [Link](https://en.wikipedia.org/wiki/Huffman_coding)
@@ -193,7 +193,7 @@ As for huffman coding, the actual tree structure looks like this:
 
 ![huff][huff1]
 
-[huff1]: ./images/act.png
+[huff1]: ./images/huff.png
 
 <strong>Key idea</strong> <br>
 We maintain a binary tree and create a new node as the parent for two least-frequent letters. And the key for this new node is the sum of keys for its two children. We repeat this until no nodes left in this "book".
