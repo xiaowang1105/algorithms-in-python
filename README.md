@@ -173,8 +173,6 @@ If we sort activity by value weight/length, we can prove an existing optimal str
 
 [act1]: ./images/act1.png
 
-<img src=" ./images/act1.png" style="zoom:50%" />
-
 
 ### 4.2 - Huffman Coding [Link](https://en.wikipedia.org/wiki/Huffman_coding)
 Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. 
