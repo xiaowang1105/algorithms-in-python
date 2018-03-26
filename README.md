@@ -173,7 +173,7 @@ If we sort activity by value weight/length, we can prove an existing optimal str
 
 [act1]: ./images/act1.png
 
-
+<img src=" ./images/act1.png" width = "300" height = "300" alt="图片名称" align=center />
 
 
 ### 4.2 - Huffman Coding [Link](https://en.wikipedia.org/wiki/Huffman_coding)
