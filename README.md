@@ -387,4 +387,24 @@ So, Corresponding recurrence:
 <strong>Properties</strong> <br>
 * Running Time for exact algorithm: $O( n 2^n ) O(n) =O(n^2 2^n )$
 
-###
+### 6.3 - Boolean Satisfiability Problem [Link](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
+Boolean satisfiability problem (sometimes called propositional satisfiability problem and abbreviated as SATISFIABILITY or SAT) is the problem of determining if there exists an interpretation that satisfies a given Boolean formula.
+
+3-SAT is one of Karp's 21 NP-complete problems, and it is used as a starting point for proving that other problems are also NP-hard. <br>
+
+Herein, I introduce Papadimitriou’s Algorithm for 2-SAT (This is a <strong> very very very interesting algorithm </strong>, so I decide to introduce it even though 2-SAT is not NPC). <br>
+
+<strong>Key idea</strong> <br>
+Choose random initial assignment and pick arbitrary unsatisfied clause and flip the value of one of its variable.
+Here is the pseudocode:
+
+![2sat][2sat1]
+
+[2sat1]: ./images/2sat.png
+
+Such a casual dealing with clauses would suprisingly give us a very large probability to find the real answer. The mechanism lies in a physics term ([random walk](https://en.wikipedia.org/wiki/Random_walk)). If you are interested, I strongly recommend you to go through how random walk related to Papadimitriou.<br>
+
+<strong>Properties</strong> <br>
+* For a satisfiable 2-SAT instance with n variables, Papadimitriou’s algorithm produces a satisfying assignment with probability ≥ 1 − 1/n
+* Runs in polynomial time
+*  Always correct on unsatisfiable instances
