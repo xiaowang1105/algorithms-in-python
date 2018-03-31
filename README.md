@@ -162,7 +162,7 @@ In an undirected graph, we can use this data structure to find out how many SCCs
 * Path compression can greatly improve time efficiency of union find
 
 ## 4.0 - Greedy Algorithms
-In this section, I'm going to introducce greedy algorithms, one powerful algorithms design strategy. <br>
+In this section, I'm going to introducce greedy algorithms, one powerful algorithm design strategy. <br>
 From [Wikipedia](https://en.wikipedia.org/wiki/Greedy_algorithm), a greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage[1] with the hope of finding a global optimum. In many problems, a greedy strategy does not in general produce an optimal solution, but nonetheless a greedy heuristic may yield locally optimal solutions that approximate a global optimal solution in a reasonable time.
 ### 4.1 - Shedule Activities
 In activity selection problem, every activity has its own weight and length. And our goal is to minimize the sum of weight\*length.
@@ -268,3 +268,36 @@ Very similar to SCC, we can early stop the alogrithm to control number of classe
 <strong>Properties</strong> <br>
 
 * Running time $O(ElogV)$
+
+## 5.0 - Dynamic Programming
+In this section, I'm going to introducce dynamic algorithms, one powerful algorithm design strategy. <br>
+From [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming), dynamic programming (also known as dynamic optimization) is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions. 
+
+### 5.1 - Rod Cutting [Link](https://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/)
+Given a rod of length n inches and an array of prices that contains prices of all pieces of size smaller than n. Determine the maximum value obtainable by cutting up the rod and selling the pieces. <br>
+The following table shows the relationship between price and length.
+
+![len_price][len_price1]
+
+[len_price1]: ./images/len_price.png
+
+So, if length of the rod is 8 and the values of different pieces are given as following, then the maximum obtainable value is 22 (by cutting in two pieces of lengths 2 and 6).
+
+<strong>Key idea</strong> <br>
+We view a decomposition as consisting of a first piece of length i cut off the left-hand end, and then a right-hand remainder of length n - i. $r_n = max_{1<=i<=n}(p_i + p_{n-i})$
+So, the pseudocode looks like:
+
+![rod_code][rod_code1]
+
+[rod_code1]: ./images/rod_co.png
+
+The recursion tree showing recursive calls resulting from a call CUT_ROD(p, n) looks like:
+
+![rod_tree][rod_tree1]
+
+[rod_tree1]: ./images/rod_tree.png
+
+In order to save the repeated computation for small sub-problems, we memorized an array to store these values.
+
+<strong>Properties</strong> <br>
+* Time Complexity of the above implementation is O(n^2) 
