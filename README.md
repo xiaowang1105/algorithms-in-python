@@ -42,7 +42,9 @@ This section, I will talk about the famous divide and conquer strategy and show 
 ![Interger_MUL][Interger_MUL1]
 
 [Interger_MUL1]: ./images/integer_mult.png
-The standard procedure for multiplication of two n-digit numbers requires a number of elementary operations proportional to ${\displaystyle O(n^{2})}$. As for The Karatsuba algorithm, it reduces the running time to at most http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) ${\displaystyle n^{\log _{2}3}\approx n^{1.585}}$ <br>
+The standard procedure for multiplication of two n-digit numbers requires a number of elementary operations proportional to ${\displaystyle O(n^{2})}$. As for The Karatsuba algorithm, it reduces the running time to at most 
+http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
+${\displaystyle n^{\log _{2}3}\approx n^{1.585}}$ <br>
 
 <strong>Key idea</strong> <br>
 The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ${\displaystyle x}$ and ${\displaystyle y}$ using three multiplications of smaller numbers, each with about half as many digits as ${\displaystyle x}$ or ${\displaystyle y}$, plus some additions and digit shifts. <br>
