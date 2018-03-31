@@ -1,4 +1,4 @@
-* [1.0 - Divide and Conquer](#10---Divide-and-Conquer)
+* [1.0 - Divide and Conquer](#10--Divide-and-Conquer)
   * [Interger Multiplication Problem](#11---Interger-Multiplication-Problem)
 
 # algorithms-in-python
