@@ -45,9 +45,9 @@ This section, I will talk about the famous divide and conquer strategy and show 
 The standard procedure for multiplication of two n-digit numbers requires a number of elementary operations proportional to ![equation](http://latex.codecogs.com/gif.latex?O(n^{2})). As for The Karatsuba algorithm, it reduces the running time to at most ![equation](http://latex.codecogs.com/gif.latex?n^{\log%20_{2}3}\approx%20n^{1.585}) <br>
 
 <strong>Key idea</strong> <br>
-The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ${\displaystyle x}$ and ${\displaystyle y}$ using three multiplications of smaller numbers, each with about half as many digits as ${\displaystyle x}$ or ${\displaystyle y}$, plus some additions and digit shifts. <br>
+The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ![equation](http://latex.codecogs.com/gif.latex?x) and ![equation](http://latex.codecogs.com/gif.latex?y) using three multiplications of smaller numbers, each with about half as many digits as ![equation](http://latex.codecogs.com/gif.latex?x) or ![equation](http://latex.codecogs.com/gif.latex?y), plus some additions and digit shifts. <br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)=\Theta (n^{\log _{2}3})\,\!$ <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=\Theta%20(n^{\log%20_{2}3})\,\!) <br>
 <a href="#head">`Back to Top`</a>
 ### 1.2 - Merge Sort and Insertion Sort 
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort)
