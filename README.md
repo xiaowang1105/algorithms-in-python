@@ -3,11 +3,12 @@ In this respository, I implemented some famous alogritms using python. I arrange
 (The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.)
 * [1.0 - Divide and Conquer](#10---divide-and-conquer)
   * [1.1 - Interger Multiplication Problem](#11---interger-multiplication-problem)
+  * [1.2 - Merge Sort (and Insertion Sort)](#12---merge-sort-(and-insertion-sort))
 
 ## 1.0 - Divide and Conquer
 This section, I will talk about the famous divide and conquer strategy and show some applications of this strategy.
 ### 1.1 - Interger Multiplication Problem
-* Useful Link [Link](https://en.wikipedia.org/wiki/Karatsuba_algorithm)
+* Useful [Link](https://en.wikipedia.org/wiki/Karatsuba_algorithm)
 ![Interger_MUL][Interger_MUL1]
 
 [Interger_MUL1]: ./images/integer_mult.png
@@ -17,7 +18,8 @@ The standard procedure for multiplication of two n-digit numbers requires a numb
 The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ${\displaystyle x}$ and ${\displaystyle y}$ using three multiplications of smaller numbers, each with about half as many digits as ${\displaystyle x}$ or ${\displaystyle y}$, plus some additions and digit shifts. <br>
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)=\Theta (n^{\log _{2}3})\,\!$
-### 1.2 - Merge Sort (and Insertion Sort) [Link](https://en.wikipedia.org/wiki/Merge_sort)
+### 1.2 - Merge Sort (and Insertion Sort) 
+* Useful [Link](https://en.wikipedia.org/wiki/Merge_sort)
 Before we talk about merge sort. First take a look at another algorithm and its running time to fully appreciate how great merge sort is.
 One intuitive idea for sorting is to imitate how we arrange cards according to their size, like the picture below. We immediately arrange the card when we receive it just based on what we have on our hands.
 ![insert][insert1]
