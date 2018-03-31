@@ -301,3 +301,20 @@ In order to save the repeated computation for small sub-problems, we memorized a
 
 <strong>Properties</strong> <br>
 * Time Complexity of the above implementation is O(n^2) 
+
+### 5.2 - Matrix Chain Multiplication [Link](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)
+Matrix chain multiplication (or Matrix Chain Ordering Problem, MCOP) is an optimization problem that can be solved using dynamic programming. Given a sequence of matrices, the goal is to find the most efficient way to multiply these matrices. The problem is not actually to perform the multiplications, but merely to decide the sequence of the matrix multiplications involved.
+
+![matrix_mul][matrix_mul1]
+
+[matrix_mul1]: ./images/matrix_mul.png
+
+<strong>Key idea</strong> <br>
+Optimal structure: 
+
+![mul_opt][mul_opt1]
+
+[mul_opt1]: ./images/mul_opt.png
+
+<strong>Properties</strong> <br>
+* Time Complexity of the above implementation is $\Omega(n^3)$ 
