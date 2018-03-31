@@ -318,3 +318,16 @@ Optimal structure:
 
 <strong>Properties</strong> <br>
 * Time Complexity of the above implementation is $\Omega(n^3)$ 
+
+### 5.3 - Longest Common Subsequence [Link](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem)
+The longest common subsequence (LCS) problem is the problem of finding the longest subsequence common to all sequences in a set of sequences (often just two sequences).
+
+<strong>Key idea</strong> <br>
+From CLRS, the optimal structure for this problem is:
+
+![long_op][long_op1]
+
+[long_op1]: ./images/long_op.png
+
+<strong>Properties</strong> <br>
+* Time Complexity of the above implementation is $\theta(mn)$ 
