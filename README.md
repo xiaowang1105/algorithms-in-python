@@ -111,15 +111,15 @@ Quicksort first divides a large array into two smaller sub-arrays: the low eleme
 * Average case performance	O(n log n) <br>
 <a href="#head">`Back to Top`</a>
 ### 2.2 - Karger Algorithm
-* Useful [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm)
-The idea of the algorithm is based on the concept of contraction of an edge $(u,v)$ in an undirected graph G=(V,E). Informally speaking, the contraction of an edge merges the nodes u and v into one, reducing the total number of nodes of the graph by one.
+* Useful [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm) <br>
+The idea of the algorithm is based on the concept of contraction of an edge (u,v) in an undirected graph G=(V,E). Informally speaking, the contraction of an edge merges the nodes u and v into one, reducing the total number of nodes of the graph by one.
 The figure below shows how contraction works. In the sub figure left, two Bold Black nodes are fused into one (the sub figure in the right).
 ![karger][karger1]
 
 [karger1]: ./images/example_kar.png
 <strong>Key idea</strong> <br>
 By repeating the contraction algorithm ![equation](http://latex.codecogs.com/gif.latex?T={\binom%20{n}{2}}\ln%20n) times with independent random choices and returning the smallest cut, the probability of not finding a minimum cut is
-![equation](http://latex.codecogs.com/gif.latex?\left[1-{\binom%20{n}{2}}^{-1}\right]^{T}\leq%20{\frac%20{1}{e^{\ln%20n}}}={\frac%20{1}{n}}\,.) <br>
+![equation](http://latex.codecogs.com/gif.latex?\left[1-{\binom%20{n}{2}}^{-1}\right]^{T}\leq%20{\frac%20{1}{e^{\ln%20n}}}={\frac%20{1}{n}}.) <br>
 <strong>Propeties</strong> <br>
 * With high probability we can find all min cuts in the running time of ![equation](http://latex.codecogs.com/gif.latex?O(n^{2}\ln%20^{3}n)) 
 * Not finding a min cut probability is ![equation](http://latex.codecogs.com/gif.latex?{\frac%20{1}{n}}$%20after%20$T={\binom%20{n}{2}}\ln%20n) times. <br>
