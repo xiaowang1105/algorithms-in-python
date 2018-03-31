@@ -345,3 +345,24 @@ This algorithm is based on very intuitive observation. Suppose we have a subset 
 <strong>Properties</strong> <br>
 * Time Complexity of the above implementation is $\theta(V^3)$ 
 
+## 6 - Approximation Algorithms for NPC
+From From [Wikipedia](https://en.wikipedia.org/wiki/NP-completeness), an NP-complete decision problem is one belonging to both the NP and the NP-hard complexity classes. In this context, NP stands for "nondeterministic polynomial time". The set of NP-complete problems is often denoted by NP-C or NPC. <br>
+
+In this section, I am going to introduce three very famous NPC problems and explain approximation algorithms to approach them.
+
+### 6.1 - Vertex Cover [Link](https://en.wikipedia.org/wiki/Vertex_cover)
+A vertex cover (sometimes node cover) of a graph is a set of vertices such that each edge of the graph is incident to at least one vertex of the set. The figure below shows a minimum vertex cover (where the cover set must have at least two vertice, zero and one wouldn't help).
+
+![cover][cover1]
+
+[cover1]: ./images/cover.png
+
+<strong>Key idea</strong> <br>
+It is very difficult to find a minimum vertex cover but we can find a approximate cover with at most twice the vertices in polynomial time.
+
+![cover_app][cover_app1]
+
+[cover_app1]: ./images/cover_app.png
+
+<strong>Properties</strong> <br>
+* APPROR-VERTEX-COVER is a polynomial-time 2-approximation algorithm.
