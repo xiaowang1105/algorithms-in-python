@@ -50,13 +50,13 @@ The basic step of Karatsuba's algorithm is a formula that allows one to compute 
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=\Theta%20(n^{\log%20_{2}3})\,\!) <br>
 <a href="#head">`Back to Top`</a>
 ### 1.2 - Merge Sort and Insertion Sort 
-* Useful [Link](https://en.wikipedia.org/wiki/Merge_sort)
+* Useful [Link](https://en.wikipedia.org/wiki/Merge_sort) <br>
 Before we talk about merge sort. First take a look at another algorithm and its running time to fully appreciate how great merge sort is.
 One intuitive idea for sorting is to imitate how we arrange cards according to their size, like the picture below. We immediately arrange the card when we receive it just based on what we have on our hands.
 ![insert][insert1]
 
 [insert1]: ./images/insert.png
-And the worst running time for this alogorithm is $T(n)= \theta (n^{2})\,\!$. <br>
+And the worst running time for this alogorithm is ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta%20(n^{2})\,\!). <br>
 Gif above shows how merge sort works:
 ![merge][merge1]
 
@@ -65,10 +65,10 @@ Gif above shows how merge sort works:
 <strong>Key idea</strong> <br>
 Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted) and repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.<br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(n{\log n})\,\!$ <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})\,\!) <br>
 <a href="#head">`Back to Top`</a>
 ### 1.3 - Count Inversions
-* Useful [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
+* Useful [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf) <br>
 Actually, this can be treated as application of Merger Sort. Every time we do merge operation in merge sort, we implicitly calculate the inversions. <br>
 ![inversion][inversion1]
 
@@ -77,11 +77,11 @@ Actually, this can be treated as application of Merger Sort. Every time we do me
 Like the figure above, when we first take in element from right sub-array in merge operation, that indicates the right element is smaller than ( length of left sub-array - the index of left element) elements. <br>
 As the algorithm progresses, add all the inversions will give us the total inversions.<br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(n{\log n})\,\!$ <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})\,\!) <br>
 <a href="#head">`Back to Top`</a>
 
 ### 1.4 - Maximum Subarray
-* Useful [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
+* Useful [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem) <br>
 The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum. <br>
 <strong>Key idea</strong> <br>
 If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
@@ -93,13 +93,13 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 
 [cross1]: ./images/max_crossing1.png
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= \theta(n{\lg n})\,\!$ <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(n{\lg%20n})\,\!) <br>
 <a href="#head">`Back to Top`</a>
 
 ## 2.0 - Randomized Algorithms
 This section I will talk about two algorithms which has used random variable inside.
 ### 2.1 - Quick Sort
-* Useful [Link](https://en.wikipedia.org/wiki/Quicksort)
+* Useful [Link](https://en.wikipedia.org/wiki/Quicksort) <br>
 ![quick][quick1]
 
 [quick1]: ./images/Sorting_quicksort_anim.gif
@@ -112,23 +112,23 @@ Quicksort first divides a large array into two smaller sub-arrays: the low eleme
 <a href="#head">`Back to Top`</a>
 ### 2.2 - Karger Algorithm
 * Useful [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm)
-The idea of the algorithm is based on the concept of contraction of an edge $(u,v)$ in an undirected graph $G=(V,E)$. Informally speaking, the contraction of an edge merges the nodes $u$ and $v$ into one, reducing the total number of nodes of the graph by one.
+The idea of the algorithm is based on the concept of contraction of an edge $(u,v)$ in an undirected graph G=(V,E). Informally speaking, the contraction of an edge merges the nodes u and v into one, reducing the total number of nodes of the graph by one.
 The figure below shows how contraction works. In the sub figure left, two Bold Black nodes are fused into one (the sub figure in the right).
 ![karger][karger1]
 
 [karger1]: ./images/example_kar.png
 <strong>Key idea</strong> <br>
-By repeating the contraction algorithm $T={\binom  {n}{2}}\ln n$ times with independent random choices and returning the smallest cut, the probability of not finding a minimum cut is
-${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}}}={\frac {1}{n}}\,.}$ <br>
+By repeating the contraction algorithm ![equation](http://latex.codecogs.com/gif.latex?T={\binom%20{n}{2}}\ln%20n) times with independent random choices and returning the smallest cut, the probability of not finding a minimum cut is
+![equation](http://latex.codecogs.com/gif.latex?\left[1-{\binom%20{n}{2}}^{-1}\right]^{T}\leq%20{\frac%20{1}{e^{\ln%20n}}}={\frac%20{1}{n}}\,.) <br>
 <strong>Propeties</strong> <br>
-* With high probability we can find all min cuts in the running time of $O(n^{2}\ln ^{3}n)$ 
-* Not finding a min cut probability is ${\frac {1}{n}}$ after $T={\binom  {n}{2}}\ln n$ times. <br>
+* With high probability we can find all min cuts in the running time of ![equation](http://latex.codecogs.com/gif.latex?O(n^{2}\ln%20^{3}n)) 
+* Not finding a min cut probability is ![equation](http://latex.codecogs.com/gif.latex?{\frac%20{1}{n}}$%20after%20$T={\binom%20{n}{2}}\ln%20n) times. <br>
 <a href="#head">`Back to Top`</a>
 
 ## 3.0 - Data Structures
 It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
 ### 3.1 - Queue and Breadth First Search
-* Useful [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
+* Useful [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search) <br>
 Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
 ![queue][queue1]
 
@@ -142,12 +142,12 @@ And BFS is used in undirected or directed graph and it tells how many nodes a so
 [bfs1]: ./images/Animated_BFS.gif
 
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges <br>
+* Running Time: T(n)= O(V+E), V is number of vertices, E is number of edges <br>
 <a href="#head">`Back to Top`</a>
 
 ### 3.2 - Stack and Depth First Search
 * Useful [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
-Stack, also known as LIFO, has the property of last in, first out.
+Stack, also known as LIFO, has the property of last in, first out. <br>
 ![stack][stack1]
 
 [stack1]: ./images/Lifo_stack.png
@@ -160,7 +160,7 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 [depth1]: ./images/Depth-First-Search.gif
 
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges <br>
+* Running Time: T(n)= O(V+E), V is number of vertices, E is number of edges <br>
 <a href="#head">`Back to Top`</a>
 
 ### 3.3 - Heap and Median Median Maintenance
@@ -181,7 +181,7 @@ We can use a max heap on left side to represent elements that are less than effe
 <a href="#head">`Back to Top`</a>
 
 ### 3.4 - Strongly Connected Component
-* Useful [Link](https://en.wikipedia.org/wiki/Strongly_connected_component)
+* Useful [Link](https://en.wikipedia.org/wiki/Strongly_connected_component) <br>
 A directed graph is called strongly connected if there is a path in each direction between each pair of vertices of the graph. In a directed graph G that may not itself be strongly connected, a pair of vertices u and v are said to be strongly connected to each other if there is a path in each direction between them.
 
 ![scc][scc1]
@@ -191,7 +191,7 @@ A directed graph is called strongly connected if there is a path in each directi
 <strong>Key idea</strong> <br>
 Through simple observation, we find out that tranpose of graph has the same SCCs as the original graph. We run DFS twice. First time, we run it on G and compute finishing time for each vertex. And then, we run DFS on G^T but in the main loop of DFS, consider the vertices in order of decreasing finishing time. <br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= \theta(V+E)$, $V$ is number of vertices, $E$ is number of edges <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(V+E)), V is number of vertices, E is number of edges <br>
 <a href="#head">`Back to Top`</a>
 
 ### 3.5 - Disjoint-set and SCC
@@ -236,7 +236,7 @@ As the figure shown above, we consider the cost caused by two activites that are
 <a href="#head">`Back to Top`</a>
 
 ### 4.2 - Activity selection
-* Useful [Link](https://en.wikipedia.org/wiki/Activity_selection_problem)
+* Useful [Link](https://en.wikipedia.org/wiki/Activity_selection_problem) <br>
 In this problem, every activity has its own start time and finish time. our goal is to selection a max-length subset, where jobs are compatible. <br>
 
 ![selection][selection1]
@@ -247,11 +247,11 @@ In this problem, every activity has its own start time and finish time. our goal
 We sorted the array according to its finish time.
 The alogirthm put the first job whose start time is bigger than last job's finish time. <br>
 <strong>Properties</strong> <br>
-* The recursive activity selection running time is $T(n)= \theta(n)$ <br>
+* The recursive activity selection running time is ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(n)) <br>
 <a href="#head">`Back to Top`</a>
 
 ### 4.3 - Huffman Coding
-* Useful [Link](https://en.wikipedia.org/wiki/Huffman_coding)
+* Useful [Link](https://en.wikipedia.org/wiki/Huffman_coding) <br>
 Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. 
 For example, the table below shows letters' frequency in a "book".
 
@@ -294,7 +294,7 @@ Dijkstra's algorithm is an algorithm for finding the shortest paths between node
 Seperate nodes into two groups, one group is marked as explored. And we update the distance from unexplored group to explored group by the shortest distance.
 
 <strong>Properties</strong> <br>
-* Running time  $ O(|E|+|V|\log |V|)$ based on a min-priority queue implemented by a Fibonacci heap <br>
+* Running time ![equation](http://latex.codecogs.com/gif.latex?O(|E|+|V|\log%20|V|)) based on a min-priority queue implemented by a Fibonacci heap <br>
 <a href="#head">`Back to Top`</a>
 
 ### 4.5 - Prim Algorithm
@@ -315,13 +315,13 @@ Repeat step 2 (until all vertices are in the tree). <br>
 <strong>Properties</strong> <br>
 
 * Running time 
- + adjacency matrix, searching	$O(|V|^{2})$
- + binary heap and adjacency list	$O((|V|+|E|)\log |V|)=O(|E|\log |V|)$
- + Fibonacci heap and adjacency list	$ O(|E|+|V|\log |V|) $ <br>
+ + adjacency matrix, searching	![equation](http://latex.codecogs.com/gif.latex?O(|V|^2))
+ + binary heap and adjacency list	![equation](http://latex.codecogs.com/gif.latex?O((|V|+|E|)\log%20|V|)=O(|E|\log%20|V|))
+ + Fibonacci heap and adjacency list	![equation](http://latex.codecogs.com/gif.latex?O(|E|+|V|\log%20|V|)) <br>
  <a href="#head">`Back to Top`</a>
  
 ### 4.6 - Kruskal Algorithm and Clustering Problem
-* Useful [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
+* Useful [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) <br>
 Prim's algorithm is another greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Insead of maintaining a tree like Prim, it maintains forest.
 
 ![kruskal][kruskal1]
@@ -333,7 +333,7 @@ Very similar to SCC, we can early stop the alogrithm to control number of classe
 
 <strong>Properties</strong> <br>
 
-* Running time $O(ElogV)$ <br>
+* Running time O(ElogV) <br>
 <a href="#head">`Back to Top`</a>
 
 ## 5.0 - Dynamic Programming
@@ -341,7 +341,7 @@ In this section, I'm going to introducce dynamic algorithms, one powerful algori
 From [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming), dynamic programming (also known as dynamic optimization) is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions. 
 
 ### 5.1 - Rod Cutting
-* Useful [Link](https://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/)
+* Useful [Link](https://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/) <br>
 Given a rod of length n inches and an array of prices that contains prices of all pieces of size smaller than n. Determine the maximum value obtainable by cutting up the rod and selling the pieces. <br>
 The following table shows the relationship between price and length.
 
@@ -352,7 +352,7 @@ The following table shows the relationship between price and length.
 So, if length of the rod is 8 and the values of different pieces are given as following, then the maximum obtainable value is 22 (by cutting in two pieces of lengths 2 and 6).
 
 <strong>Key idea</strong> <br>
-We view a decomposition as consisting of a first piece of length i cut off the left-hand end, and then a right-hand remainder of length n - i. $r_n = max_{1<=i<=n}(p_i + p_{n-i})$
+We view a decomposition as consisting of a first piece of length i cut off the left-hand end, and then a right-hand remainder of length n - i. ![equation](http://latex.codecogs.com/gif.latex?r_n%20=%20max_{1%3C=i%3C=n}(p_i%20+%20p_{n-i}))
 So, the pseudocode looks like:
 
 ![rod_code][rod_code1]
@@ -387,10 +387,11 @@ Optimal structure:
 [mul_opt1]: ./images/mul_opt.png
 
 <strong>Properties</strong> <br>
-* Time Complexity of the above implementation is $\Omega(n^3)$  <br>
+* Time Complexity of the above implementation is ![equation](http://latex.codecogs.com/gif.latex?\Omega(n^3))  <br>
 <a href="#head">`Back to Top`</a>
 
-### 5.3 - Longest Common Subsequence [Link](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem)
+### 5.3 - Longest Common Subsequence
+* Useful [Link](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem) <br>
 The longest common subsequence (LCS) problem is the problem of finding the longest subsequence common to all sequences in a set of sequences (often just two sequences).
 
 <strong>Key idea</strong> <br>
@@ -405,7 +406,7 @@ From CLRS, the optimal structure for this problem is:
 <a href="#head">`Back to Top`</a>
 
 ### 5.4 - Floyd–Warshall Algorithm
-* Useful [Link](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm)
+* Useful [Link](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm) <br>
 Floyd–Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles).
 
 <strong>Key idea</strong> <br>
@@ -416,7 +417,7 @@ This algorithm is based on very intuitive observation. Suppose we have a subset 
 [Floyd-Warshall_example1]: ./images/Floyd-Warshall_example.png
 
 <strong>Properties</strong> <br>
-* Time Complexity of the above implementation is $\theta(V^3)$ <br>
+* Time Complexity of the above implementation is ![equation](http://latex.codecogs.com/gif.latex?\theta(V^3)) <br>
 <a href="#head">`Back to Top`</a>
 
 ## 6.0 - Approximation Algorithms for NPC
@@ -425,7 +426,7 @@ From From [Wikipedia](https://en.wikipedia.org/wiki/NP-completeness), an NP-comp
 In this section, I am going to introduce three very famous NPC problems and explain approximation algorithms to approach them.
 
 ### 6.1 - Vertex Cover
-* Useful [Link](https://en.wikipedia.org/wiki/Vertex_cover)
+* Useful [Link](https://en.wikipedia.org/wiki/Vertex_cover) <br>
 A vertex cover (sometimes node cover) of a graph is a set of vertices such that each edge of the graph is incident to at least one vertex of the set. The figure below shows a minimum vertex cover (where the cover set must have at least two vertice, zero and one wouldn't help).
 
 ![cover][cover1]
@@ -444,7 +445,7 @@ It is very difficult to find a minimum vertex cover but we can find a approximat
 <a href="#head">`Back to Top`</a>
 
 ### 6.2 - Travelling Salesman Problem
-* Useful [Link](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+* Useful [Link](https://en.wikipedia.org/wiki/Travelling_salesman_problem) <br>
 The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" The gif shows brute force for tsp.
 
 ![bruce][bruce1]
@@ -462,11 +463,11 @@ So, Corresponding recurrence:
 [exact_tsp1]: ./images/tsp_exact.png
 
 <strong>Properties</strong> <br>
-* Running Time for exact algorithm: $O( n 2^n ) O(n) =O(n^2 2^n )$ <br>
+* Running Time for exact algorithm: ![equation](http://latex.codecogs.com/gif.latex?O(%20n%202^n%20)%20O(n)%20=O(n^2%202^n%20))  <br>
 <a href="#head">`Back to Top`</a>
 
 ### 6.3 - Boolean Satisfiability Problem
-* Useful [Link](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
+* Useful [Link](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) <br>
 Boolean satisfiability problem (sometimes called propositional satisfiability problem and abbreviated as SATISFIABILITY or SAT) is the problem of determining if there exists an interpretation that satisfies a given Boolean formula.
 
 3-SAT is one of Karp's 21 NP-complete problems, and it is used as a starting point for proving that other problems are also NP-hard. <br>
