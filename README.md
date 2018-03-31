@@ -2,7 +2,7 @@
 In this respository, I implemented some famous alogritms using python. I arrange them according to the strategy they use. And for every algorithn, I will explain the problem they try to solve and some relevant resourses.<br>
 (The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.)
 
-* [Divide and Conquer](#Divide and Conquer)
+* [1.0 - Divide and Conquer](#1.0 - Divide and Conquer)
   * [Interger Multiplication Problem](#Interger Multiplication Problem)
 ## 1.0 - Divide and Conquer
 This section, I will talk about the famous divide and conquer strategy and show some applications of this strategy.
