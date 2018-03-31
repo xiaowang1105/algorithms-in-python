@@ -8,6 +8,7 @@ In this respository, I implemented some famous alogritms using python. I arrange
   * [1.4 - Maximum Subarray](#14---maximum-subarray)
 * [2.0 - Randomized Algorithms](#20---randomized-algorithms)
   * [2.1 - Quick Sort](#21---quick-sort)
+  * [K2.2 - Karger's Algorithm](#22---karger's-algorithm)
 
 ## 1.0 - Divide and Conquer
 This section, I will talk about the famous divide and conquer strategy and show some applications of this strategy.
@@ -79,7 +80,8 @@ Quicksort first divides a large array into two smaller sub-arrays: the low eleme
 * Worst case performance	O(n^2)
 * Best case performance	O(n log n) or O(n) with three-way partition
 * Average case performance	O(n log n)
-### 2.2 - Karger's Algorithm [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm)
+### 2.2 - Karger's Algorithm
+Useful [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm)
 The idea of the algorithm is based on the concept of contraction of an edge $(u,v)$ in an undirected graph $G=(V,E)$. Informally speaking, the contraction of an edge merges the nodes $u$ and $v$ into one, reducing the total number of nodes of the graph by one.
 The figure below shows how contraction works. In the sub figure left, two Bold Black nodes are fused into one (the sub figure in the right).
 ![karger][karger1]
