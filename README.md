@@ -21,7 +21,7 @@ In this respository, I implemented some famous alogritms using python. I arrange
   * [4.1 - Shedule Activities](#41---shedule-activities)
   * [4.2 - Activity selection](#42---activity-selection)
   * [4.3 - Huffman Coding](#43---huffman-coding)
-  * [4.4 - Dijkstra's Algorithm](#44---dijkstra-algorithm)
+  * [4.4 - Dijkstra's Algorithm](#44---dijkstra-algorithm)
   * [4.5 - Prim's Algorithm](#45---prim-algorithm)
   * [4.6 - Kruskal's Algorithm and Clustering Problem](#46---kruskal-algorithm-and-clustering-problem)
 * [5.0 - Dynamic Programming](#50---dynamic-programming)
