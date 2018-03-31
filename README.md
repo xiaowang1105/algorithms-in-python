@@ -366,3 +366,25 @@ It is very difficult to find a minimum vertex cover but we can find a approximat
 
 <strong>Properties</strong> <br>
 * APPROR-VERTEX-COVER is a polynomial-time 2-approximation algorithm.
+
+### 6.2 - Travelling Salesman Problem [Link](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" The gif shows brute force for tsp.
+
+![bruce][bruce1]
+
+[bruce1]: ./images/Bruteforce.gif
+
+<strong>Key idea</strong> <br>
+The approximation algorithm for tsp is a greedy algorithm (CLRS P1114). Here, I also want to introduce an <strong>exact algorithm</strong> for tsp using dynamic programming.
+
+Subproblem: for every destination j ∈ {1,2,...,n}, every subset S ⊆ {1,2,...,n} that contains 1 and j, let L S,j = minimum length of a path from 1 to j that visits precisely the vertices of S [exactly once each].
+So, Corresponding recurrence:
+
+![exact_tsp][exact_tsp1]
+
+[exact_tsp1]: ./images/tsp_exact.png
+
+<strong>Properties</strong> <br>
+* Running Time for exact algorithm: $O( n 2^n ) O(n) =O(n^2 2^n )$
+
+###
