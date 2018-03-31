@@ -254,3 +254,17 @@ Repeat step 2 (until all vertices are in the tree). <br>
  + adjacency matrix, searching	$O(|V|^{2})$
  + binary heap and adjacency list	$O((|V|+|E|)\log |V|)=O(|E|\log |V|)$
  + Fibonacci heap and adjacency list	$ O(|E|+|V|\log |V|) $
+ 
+### 4.6 - Kruskal's Algorithm and Clustering Problem [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
+Prim's algorithm is another greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Insead of maintaining a tree like Prim, it maintains forest.
+
+![kruskal][kruskal1]
+
+[kruskal1]: ./images/Kruskal.gif
+
+<strong>Key idea</strong> <br>
+Very similar to SCC, we can early stop the alogrithm to control number of classes in our graph, which is to say we can cluster the graph.
+
+<strong>Properties</strong> <br>
+
+* Running time $O(ElogV)$
