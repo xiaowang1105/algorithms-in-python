@@ -233,3 +233,24 @@ Seperate nodes into two groups, one group is marked as explored. And we update t
 
 <strong>Properties</strong> <br>
 * Running time  $ O(|E|+|V|\log |V|)$ based on a min-priority queue implemented by a Fibonacci heap
+
+### 4.5 - Prim's Algorithm [Link](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
+Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Very similar to Dijkstra Algorithm, we maintain two sets, explored one and unexplored one. Every time, we only absorb the vertex, which has the smallest distance to explored set. This is shown very clearly in the figure below:
+
+![prim][prim1]
+
+[prim1]: ./images/prim.gif
+
+<strong>Key idea</strong> <br>
+The algorithm may informally be described as performing the following steps:
+
+Initialize a tree with a single vertex, chosen arbitrarily from the graph. <br>
+Grow the tree by one edge: of the edges that connect the tree to vertices not yet in the tree, find the minimum-weight edge, and transfer it to the tree. <br>
+Repeat step 2 (until all vertices are in the tree). <br>
+
+<strong>Properties</strong> <br>
+
+* Running time 
+ + adjacency matrix, searching	$O(|V|^{2})$
+ + binary heap and adjacency list	$O((|V|+|E|)\log |V|)=O(|E|\log |V|)$
+ + Fibonacci heap and adjacency list	$ O(|E|+|V|\log |V|) $
