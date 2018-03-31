@@ -47,7 +47,7 @@ The standard procedure for multiplication of two n-digit numbers requires a numb
 <strong>Key idea</strong> <br>
 The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ![equation](http://latex.codecogs.com/gif.latex?x) and ![equation](http://latex.codecogs.com/gif.latex?y) using three multiplications of smaller numbers, each with about half as many digits as ![equation](http://latex.codecogs.com/gif.latex?x) or ![equation](http://latex.codecogs.com/gif.latex?y), plus some additions and digit shifts. <br>
 <strong>Propeties</strong> <br>
-* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=\Theta%20(n^{\log%20_{2}3})\,\!) <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=\Theta%20(n^{\log%20_{2}3})) <br>
 <a href="#head">`Back to Top`</a>
 ### 1.2 - Merge Sort and Insertion Sort 
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort) <br>
@@ -56,7 +56,7 @@ One intuitive idea for sorting is to imitate how we arrange cards according to t
 ![insert][insert1]
 
 [insert1]: ./images/insert.png
-And the worst running time for this alogorithm is ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta%20(n^{2})\,\!). <br>
+And the worst running time for this alogorithm is ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta%20(n^{2})). <br>
 Gif above shows how merge sort works:
 ![merge][merge1]
 
@@ -65,7 +65,7 @@ Gif above shows how merge sort works:
 <strong>Key idea</strong> <br>
 Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted) and repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.<br>
 <strong>Propeties</strong> <br>
-* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})\,\!) <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})) <br>
 <a href="#head">`Back to Top`</a>
 ### 1.3 - Count Inversions
 * Useful [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf) <br>
@@ -77,7 +77,7 @@ Actually, this can be treated as application of Merger Sort. Every time we do me
 Like the figure above, when we first take in element from right sub-array in merge operation, that indicates the right element is smaller than ( length of left sub-array - the index of left element) elements. <br>
 As the algorithm progresses, add all the inversions will give us the total inversions.<br>
 <strong>Propeties</strong> <br>
-* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})\,\!) <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})) <br>
 <a href="#head">`Back to Top`</a>
 
 ### 1.4 - Maximum Subarray
@@ -93,7 +93,7 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 
 [cross1]: ./images/max_crossing1.png
 <strong>Propeties</strong> <br>
-* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(n{\lg%20n})\,\!) <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(n{\lg%20n})) <br>
 <a href="#head">`Back to Top`</a>
 
 ## 2.0 - Randomized Algorithms
