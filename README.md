@@ -1,6 +1,6 @@
 # algorithms-in-python
 In this respository, I implemented some famous alogritms using python. I arrange them according to the strategy they use. And for every algorithn, I will explain the problem they try to solve and some relevant resourses.<br>
-(The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.)
+(The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.) <br>
 This is the content:
 <a id="head"/>
 * [1.0 - Divide and Conquer](#10---divide-and-conquer)
@@ -47,7 +47,7 @@ The standard procedure for multiplication of two n-digit numbers requires a numb
 <strong>Key idea</strong> <br>
 The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ${\displaystyle x}$ and ${\displaystyle y}$ using three multiplications of smaller numbers, each with about half as many digits as ${\displaystyle x}$ or ${\displaystyle y}$, plus some additions and digit shifts. <br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)=\Theta (n^{\log _{2}3})\,\!$
+* Running Time: $T(n)=\Theta (n^{\log _{2}3})\,\!$ <br>
 <a href="#head">`Back to Top`</a>
 ### 1.2 - Merge Sort and Insertion Sort 
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort)
@@ -65,7 +65,8 @@ Gif above shows how merge sort works:
 <strong>Key idea</strong> <br>
 Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted) and repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.<br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(n{\log n})\,\!$
+* Running Time: $T(n)= O(n{\log n})\,\!$ <br>
+<a href="#head">`Back to Top`</a>
 ### 1.3 - Count Inversions
 * Useful [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
 Actually, this can be treated as application of Merger Sort. Every time we do merge operation in merge sort, we implicitly calculate the inversions. <br>
@@ -76,7 +77,8 @@ Actually, this can be treated as application of Merger Sort. Every time we do me
 Like the figure above, when we first take in element from right sub-array in merge operation, that indicates the right element is smaller than ( length of left sub-array - the index of left element) elements. <br>
 As the algorithm progresses, add all the inversions will give us the total inversions.<br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(n{\log n})\,\!$
+* Running Time: $T(n)= O(n{\log n})\,\!$ <br>
+<a href="#head">`Back to Top`</a>
 
 ### 1.4 - Maximum Subarray
 * Useful [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
@@ -91,7 +93,8 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 
 [cross1]: ./images/max_crossing1.png
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= \theta(n{\lg n})\,\!$
+* Running Time: $T(n)= \theta(n{\lg n})\,\!$ <br>
+<a href="#head">`Back to Top`</a>
 
 ## 2.0 - Randomized Algorithms
 This section I will talk about two algorithms which has used random variable inside.
@@ -105,7 +108,8 @@ Quicksort first divides a large array into two smaller sub-arrays: the low eleme
 <strong>Propeties</strong> <br>
 * Worst case performance	O(n^2)
 * Best case performance	O(n log n) or O(n) with three-way partition
-* Average case performance	O(n log n)
+* Average case performance	O(n log n) <br>
+<a href="#head">`Back to Top`</a>
 ### 2.2 - Karger Algorithm
 * Useful [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm)
 The idea of the algorithm is based on the concept of contraction of an edge $(u,v)$ in an undirected graph $G=(V,E)$. Informally speaking, the contraction of an edge merges the nodes $u$ and $v$ into one, reducing the total number of nodes of the graph by one.
@@ -118,7 +122,8 @@ By repeating the contraction algorithm $T={\binom  {n}{2}}\ln n$ times with inde
 ${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}}}={\frac {1}{n}}\,.}$ <br>
 <strong>Propeties</strong> <br>
 * With high probability we can find all min cuts in the running time of $O(n^{2}\ln ^{3}n)$ 
-* Not finding a min cut probability is ${\frac {1}{n}}$ after $T={\binom  {n}{2}}\ln n$ times.
+* Not finding a min cut probability is ${\frac {1}{n}}$ after $T={\binom  {n}{2}}\ln n$ times. <br>
+<a href="#head">`Back to Top`</a>
 
 ## 3.0 - Data Structures
 It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
@@ -137,7 +142,8 @@ And BFS is used in undirected or directed graph and it tells how many nodes a so
 [bfs1]: ./images/Animated_BFS.gif
 
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
+* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges <br>
+<a href="#head">`Back to Top`</a>
 
 ### 3.2 - Stack and Depth First Search
 * Useful [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
@@ -154,7 +160,8 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 [depth1]: ./images/Depth-First-Search.gif
 
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
+* Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges <br>
+<a href="#head">`Back to Top`</a>
 
 ### 3.3 - Heap and Median Median Maintenance
 * Useful [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure))[Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
@@ -170,7 +177,8 @@ Median Maintenance problem is that if integers are read from a data stream, find
 We can use a max heap on left side to represent elements that are less than effective median, and a min heap on right side to represent elements that are greater than effective median. When the difference between size of two heaps is greater or equal to 2, we switch one element to another smaller size heap.
 
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(N log N)$
+* Running Time: $T(n)= O(N log N)$ <br>
+<a href="#head">`Back to Top`</a>
 
 ### 3.4 - Strongly Connected Component
 * Useful [Link](https://en.wikipedia.org/wiki/Strongly_connected_component)
@@ -183,7 +191,8 @@ A directed graph is called strongly connected if there is a path in each directi
 <strong>Key idea</strong> <br>
 Through simple observation, we find out that tranpose of graph has the same SCCs as the original graph. We run DFS twice. First time, we run it on G and compute finishing time for each vertex. And then, we run DFS on G^T but in the main loop of DFS, consider the vertices in order of decreasing finishing time. <br>
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= \theta(V+E)$, $V$ is number of vertices, $E$ is number of edges
+* Running Time: $T(n)= \theta(V+E)$, $V$ is number of vertices, $E$ is number of edges <br>
+<a href="#head">`Back to Top`</a>
 
 ### 3.5 - Disjoint-set and SCC
 * Useful [Link](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
@@ -205,7 +214,8 @@ In an undirected graph, we can use this data structure to find out how many SCCs
 
 <strong>Propeties</strong> <br>
 * We can use a weighted-union heuristic to save time when call find_set operation
-* Path compression can greatly improve time efficiency of union find
+* Path compression can greatly improve time efficiency of union find <br>
+<a href="#head">`Back to Top`</a>
 
 ## 4.0 - Greedy Algorithms
 In this section, I'm going to introducce greedy algorithms, one powerful algorithm design strategy. <br>
@@ -222,7 +232,8 @@ If we sort activity by value weight/length, we can prove an existing optimal str
 As the figure shown above, we consider the cost caused by two activites that are ranged differently in two arrangement (i, j). We find out that the cost in greedy alogrithm is smaller than optimal structure by the value of wi\*lj - wj\*li, which is greater than or equat to 0. 
 
 <strong>Properties</strong> <br>
-* Running time is dominated by sorting
+* Running time is dominated by sorting <br>
+<a href="#head">`Back to Top`</a>
 
 ### 4.2 - Activity selection
 * Useful [Link](https://en.wikipedia.org/wiki/Activity_selection_problem)
@@ -236,7 +247,8 @@ In this problem, every activity has its own start time and finish time. our goal
 We sorted the array according to its finish time.
 The alogirthm put the first job whose start time is bigger than last job's finish time. <br>
 <strong>Properties</strong> <br>
-* The recursive activity selection running time is $T(n)= \theta(n)$
+* The recursive activity selection running time is $T(n)= \theta(n)$ <br>
+<a href="#head">`Back to Top`</a>
 
 ### 4.3 - Huffman Coding
 * Useful [Link](https://en.wikipedia.org/wiki/Huffman_coding)
@@ -266,7 +278,8 @@ We maintain a binary tree and create a new node as the parent for two least-freq
 [huff_works1]: ./images/huff_works.png
 
 <strong>Properties</strong> <br>
-* Procedure HUFFMAN produces an optimal prefix code
+* Procedure HUFFMAN produces an optimal prefix code <br>
+<a href="#head">`Back to Top`</a>
 
 ### 4.4 - Dijkstra Algorithm
 * Useful [Link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
@@ -281,7 +294,8 @@ Dijkstra's algorithm is an algorithm for finding the shortest paths between node
 Seperate nodes into two groups, one group is marked as explored. And we update the distance from unexplored group to explored group by the shortest distance.
 
 <strong>Properties</strong> <br>
-* Running time  $ O(|E|+|V|\log |V|)$ based on a min-priority queue implemented by a Fibonacci heap
+* Running time  $ O(|E|+|V|\log |V|)$ based on a min-priority queue implemented by a Fibonacci heap <br>
+<a href="#head">`Back to Top`</a>
 
 ### 4.5 - Prim Algorithm
 * Useful [Link](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
@@ -303,7 +317,8 @@ Repeat step 2 (until all vertices are in the tree). <br>
 * Running time 
  + adjacency matrix, searching	$O(|V|^{2})$
  + binary heap and adjacency list	$O((|V|+|E|)\log |V|)=O(|E|\log |V|)$
- + Fibonacci heap and adjacency list	$ O(|E|+|V|\log |V|) $
+ + Fibonacci heap and adjacency list	$ O(|E|+|V|\log |V|) $ <br>
+ <a href="#head">`Back to Top`</a>
  
 ### 4.6 - Kruskal Algorithm and Clustering Problem
 * Useful [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
@@ -318,7 +333,8 @@ Very similar to SCC, we can early stop the alogrithm to control number of classe
 
 <strong>Properties</strong> <br>
 
-* Running time $O(ElogV)$
+* Running time $O(ElogV)$ <br>
+<a href="#head">`Back to Top`</a>
 
 ## 5.0 - Dynamic Programming
 In this section, I'm going to introducce dynamic algorithms, one powerful algorithm design strategy. <br>
@@ -352,7 +368,8 @@ The recursion tree showing recursive calls resulting from a call CUT_ROD(p, n) l
 In order to save the repeated computation for small sub-problems, we memorized an array to store these values.
 
 <strong>Properties</strong> <br>
-* Time Complexity of the above implementation is O(n^2) 
+* Time Complexity of the above implementation is O(n^2)  <br>
+<a href="#head">`Back to Top`</a>
 
 ### 5.2 - Matrix Chain Multiplication
 * Useful [Link](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)
@@ -370,7 +387,8 @@ Optimal structure:
 [mul_opt1]: ./images/mul_opt.png
 
 <strong>Properties</strong> <br>
-* Time Complexity of the above implementation is $\Omega(n^3)$ 
+* Time Complexity of the above implementation is $\Omega(n^3)$  <br>
+<a href="#head">`Back to Top`</a>
 
 ### 5.3 - Longest Common Subsequence [Link](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem)
 The longest common subsequence (LCS) problem is the problem of finding the longest subsequence common to all sequences in a set of sequences (often just two sequences).
@@ -383,7 +401,8 @@ From CLRS, the optimal structure for this problem is:
 [long_op1]: ./images/long_op.png
 
 <strong>Properties</strong> <br>
-* Time Complexity of the above implementation is $\theta(mn)$ 
+* Time Complexity of the above implementation is $\theta(mn)$ <br>
+<a href="#head">`Back to Top`</a>
 
 ### 5.4 - Floyd–Warshall Algorithm
 * Useful [Link](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm)
@@ -397,7 +416,8 @@ This algorithm is based on very intuitive observation. Suppose we have a subset 
 [Floyd-Warshall_example1]: ./images/Floyd-Warshall_example.png
 
 <strong>Properties</strong> <br>
-* Time Complexity of the above implementation is $\theta(V^3)$ 
+* Time Complexity of the above implementation is $\theta(V^3)$ <br>
+<a href="#head">`Back to Top`</a>
 
 ## 6.0 - Approximation Algorithms for NPC
 From From [Wikipedia](https://en.wikipedia.org/wiki/NP-completeness), an NP-complete decision problem is one belonging to both the NP and the NP-hard complexity classes. In this context, NP stands for "nondeterministic polynomial time". The set of NP-complete problems is often denoted by NP-C or NPC. <br>
@@ -420,7 +440,8 @@ It is very difficult to find a minimum vertex cover but we can find a approximat
 [cover_app1]: ./images/cover_app.png
 
 <strong>Properties</strong> <br>
-* APPROR-VERTEX-COVER is a polynomial-time 2-approximation algorithm.
+* APPROR-VERTEX-COVER is a polynomial-time 2-approximation algorithm. <br>
+<a href="#head">`Back to Top`</a>
 
 ### 6.2 - Travelling Salesman Problem
 * Useful [Link](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
@@ -441,7 +462,8 @@ So, Corresponding recurrence:
 [exact_tsp1]: ./images/tsp_exact.png
 
 <strong>Properties</strong> <br>
-* Running Time for exact algorithm: $O( n 2^n ) O(n) =O(n^2 2^n )$
+* Running Time for exact algorithm: $O( n 2^n ) O(n) =O(n^2 2^n )$ <br>
+<a href="#head">`Back to Top`</a>
 
 ### 6.3 - Boolean Satisfiability Problem
 * Useful [Link](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
@@ -464,4 +486,5 @@ Such a casual dealing with clauses would suprisingly give us a very large probab
 <strong>Properties</strong> <br>
 * For a satisfiable 2-SAT instance with n variables, Papadimitriou’s algorithm produces a satisfying assignment with probability ≥ 1 − 1/n
 * Runs in polynomial time
-*  Always correct on unsatisfiable instances
+*  Always correct on unsatisfiable instances <br>
+<a href="#head">`Back to Top`</a>
