@@ -1,5 +1,5 @@
-* [1.0 - Divide and Conquer](# 1.0 \- Divide and Conquer)
-  * [Interger Multiplication Problem](# 1.1 - Interger Multiplication Problem)
+* [1.0 - Divide and Conquer](# 10 - Divide and Conquer)
+  * [Interger Multiplication Problem](# 11 - Interger Multiplication Problem)
 
 # algorithms-in-python
 In this respository, I implemented some famous alogritms using python. I arrange them according to the strategy they use. And for every algorithn, I will explain the problem they try to solve and some relevant resourses.<br>
