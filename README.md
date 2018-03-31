@@ -1,6 +1,8 @@
 # algorithms-in-python
 In this respository, I implemented some famous alogritms using python. I arrange them according to the strategy they use. And for every algorithn, I will explain the problem they try to solve and some relevant resourses.<br>
 (The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.)
+This is the content:
+<a id="head"/>
 * [1.0 - Divide and Conquer](#10---divide-and-conquer)
   * [1.1 - Interger Multiplication Problem](#11---interger-multiplication-problem)
   * [1.2 - Merge Sort (and Insertion Sort)](#12---merge-sort-and-insertion-sort)
@@ -46,6 +48,7 @@ The standard procedure for multiplication of two n-digit numbers requires a numb
 The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ${\displaystyle x}$ and ${\displaystyle y}$ using three multiplications of smaller numbers, each with about half as many digits as ${\displaystyle x}$ or ${\displaystyle y}$, plus some additions and digit shifts. <br>
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)=\Theta (n^{\log _{2}3})\,\!$
+<a href="#head">`Back to Top`</a>
 ### 1.2 - Merge Sort and Insertion Sort 
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort)
 Before we talk about merge sort. First take a look at another algorithm and its running time to fully appreciate how great merge sort is.
