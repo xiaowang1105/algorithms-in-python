@@ -28,7 +28,7 @@ In this respository, I implemented some famous alogritms using python. I arrange
   * [5.1 - Rod Cutting](#51---rod-cutting)
   * [5.2 - Matrix Chain Multiplication](#52---matrix-chain-multiplication)
   * [5.3 - Longest Common Subsequence](#53---longest-common-subsequence)
-  * [5.4 - Floyd–Warshall Algorithm](#54---floyd–warshall-algorithm)
+  * [5.4 - Floyd-Warshall Algorithm](#54---floyd-warshall-algorithm)
 * [6.0 - Approximation Algorithms for NPC](#60---approximation-algorithms-for-npc)
   * [6.1 - Vertex Cover](#61---vertex-cover)
   * [6.2 - Travelling Salesman Problem](#62---travelling-salesman-problem)
@@ -405,7 +405,7 @@ From CLRS, the optimal structure for this problem is:
 * Time Complexity of the above implementation is $\theta(mn)$ <br>
 <a href="#head">`Back to Top`</a>
 
-### 5.4 - Floyd–Warshall Algorithm
+### 5.4 - Floyd-Warshall Algorithm
 * Useful [Link](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm) <br>
 Floyd–Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles).
 
