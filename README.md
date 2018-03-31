@@ -4,6 +4,10 @@ In this respository, I implemented some famous alogritms using python. I arrange
 * [1.0 - Divide and Conquer](#10---divide-and-conquer)
   * [1.1 - Interger Multiplication Problem](#11---interger-multiplication-problem)
   * [1.2 - Merge Sort (and Insertion Sort)](#12---merge-sort-and-insertion-sort)
+  * [1.3 - Count Inversions](#13---count-inversions)
+  * [1.4 - Maximum Subarray](#14---maximum-subarray)
+* [2.0 - Randomized Algorithms](#20---randomized-algorithms)
+  * [2.1 - Quick Sort](#21---quick-sort)
 
 ## 1.0 - Divide and Conquer
 This section, I will talk about the famous divide and conquer strategy and show some applications of this strategy.
@@ -35,7 +39,8 @@ Gif above shows how merge sort works:
 Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted) and repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.<br>
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(n{\log n})\,\!$
-### 1.3 - Count Inversions [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
+### 1.3 - Count Inversions
+Useful [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
 Actually, this can be treated as application of Merger Sort. Every time we do merge operation in merge sort, we implicitly calculate the inversions. <br>
 ![inversion][inversion1]
 
@@ -46,7 +51,8 @@ As the algorithm progresses, add all the inversions will give us the total inver
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(n{\log n})\,\!$
 
-### 1.4 - Maximum Subarray [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
+### 1.4 - Maximum Subarray
+Useful [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
 The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum. <br>
 <strong>Key idea</strong> <br>
 If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
@@ -62,7 +68,8 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 
 ## 2.0 - Randomized Algorithms
 This section I will talk about two algorithms which has used random variable inside.
-### 2.1 - Quick Sort [Link](https://en.wikipedia.org/wiki/Quicksort)
+### 2.1 - Quick Sort
+Useful [Link](https://en.wikipedia.org/wiki/Quicksort)
 ![quick][quick1]
 
 [quick1]: ./images/Sorting_quicksort_anim.gif
