@@ -1,7 +1,7 @@
 # algorithms-in-python
 In this respository, I implemented some famous alogritms using python. I arrange them according to the strategy they use. And for every algorithn, I will explain the problem they try to solve and some relevant resourses.<br>
-(The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.) <br>
-<strong>Content:</strong>
+(The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.) <br> <br>
+<strong><font size=4>Content:</font></strong>
 <a id="head"/>
 * [1.0 - Divide and Conquer](#10---divide-and-conquer)
   * [1.1 - Interger Multiplication Problem](#11---interger-multiplication-problem)
