@@ -8,7 +8,30 @@ In this respository, I implemented some famous alogritms using python. I arrange
   * [1.4 - Maximum Subarray](#14---maximum-subarray)
 * [2.0 - Randomized Algorithms](#20---randomized-algorithms)
   * [2.1 - Quick Sort](#21---quick-sort)
-  * [K2.2 - Karger's Algorithm](#22---karger's-algorithm)
+  * [2.2 - Karger's Algorithm](#22---karger-algorithm)
+* [3.0 - Data Structures](#30---data-structures)
+  * [3.1 - Queue and Breadth First Search](#31---queue-and-breadth-first-search)
+  * [3.2 - Stack and Depth First Search](#32---stack-and-depth-first-search)
+  * [3.3 - Heap and Median Median Maintenance](#33---heap-and-median-median-maintenance)
+  * [3.4 - Strongly Connected Component](#34---strongly-connected-component)
+  * [3.5 - Disjoint-set and SCC](#35---disjoint-set-and-SCC)
+* [4.0 - Greedy Algorithms](#40---greedy-algorithms)
+  * [4.1 - Shedule Activities](#41---shedule-activities)
+  * [4.2 - Activity selection](#42---activity-selection)
+  * [4.3 - Huffman Coding](#43---huffman-coding)
+  * [4.4 - Dijkstra's Algorithm](#44---dijkstra-algorithm)
+  * [4.5 - Prim's Algorithm](#45---prim-algorithm)
+  * [4.6 - Kruskal's Algorithm and Clustering Problem](#46---kruskal-algorithm-and-clustering-problem)
+* [5.0 - Dynamic Programming](#50---dynamic-programming)
+  * [5.1 - Rod Cutting](#51---rod-cutting)
+  * [5.2 - Matrix Chain Multiplication](#52---matrix-chain-multiplication)
+  * [5.3 - Longest Common Subsequence](#53---longest-common-subsequence)
+  * [5.4 - Floyd–Warshall Algorithm](#54---floyd–2arshall-algorithm)
+* [6.0 - Approximation Algorithms for NPC](#60---approximation-algorithms-for-npc)
+  * [6.1 - Vertex Cover](#61---vertex-cover)
+  * [6.2 - Travelling Salesman Problem](#62---travelling-salesman-problem)
+  * [6.3 - Boolean Satisfiability Problem](#63---boolean-satisfiability-problem)
+
 
 ## 1.0 - Divide and Conquer
 This section, I will talk about the famous divide and conquer strategy and show some applications of this strategy.
@@ -41,7 +64,7 @@ Divide the unsorted list into n sublists, each containing 1 element (a list of 1
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(n{\log n})\,\!$
 ### 1.3 - Count Inversions
-Useful [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
+* Useful [Link](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf)
 Actually, this can be treated as application of Merger Sort. Every time we do merge operation in merge sort, we implicitly calculate the inversions. <br>
 ![inversion][inversion1]
 
@@ -53,7 +76,7 @@ As the algorithm progresses, add all the inversions will give us the total inver
 * Running Time: $T(n)= O(n{\log n})\,\!$
 
 ### 1.4 - Maximum Subarray
-Useful [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
+* Useful [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem)
 The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum. <br>
 <strong>Key idea</strong> <br>
 If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
@@ -70,7 +93,7 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 ## 2.0 - Randomized Algorithms
 This section I will talk about two algorithms which has used random variable inside.
 ### 2.1 - Quick Sort
-Useful [Link](https://en.wikipedia.org/wiki/Quicksort)
+* Useful [Link](https://en.wikipedia.org/wiki/Quicksort)
 ![quick][quick1]
 
 [quick1]: ./images/Sorting_quicksort_anim.gif
@@ -80,8 +103,8 @@ Quicksort first divides a large array into two smaller sub-arrays: the low eleme
 * Worst case performance	O(n^2)
 * Best case performance	O(n log n) or O(n) with three-way partition
 * Average case performance	O(n log n)
-### 2.2 - Karger's Algorithm
-Useful [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm)
+### 2.2 - Karger Algorithm
+* Useful [Link](https://en.wikipedia.org/wiki/Karger%27s_algorithm)
 The idea of the algorithm is based on the concept of contraction of an edge $(u,v)$ in an undirected graph $G=(V,E)$. Informally speaking, the contraction of an edge merges the nodes $u$ and $v$ into one, reducing the total number of nodes of the graph by one.
 The figure below shows how contraction works. In the sub figure left, two Bold Black nodes are fused into one (the sub figure in the right).
 ![karger][karger1]
@@ -96,7 +119,8 @@ ${\displaystyle \left[1-{\binom {n}{2}}^{-1}\right]^{T}\leq {\frac {1}{e^{\ln n}
 
 ## 3.0 - Data Structures
 It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
-### 3.1 - Queue and Breadth First Search [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
+### 3.1 - Queue and Breadth First Search
+* Useful [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search)
 Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
 ![queue][queue1]
 
@@ -112,7 +136,8 @@ And BFS is used in undirected or directed graph and it tells how many nodes a so
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
 
-### 3.2 - Stack and Depth First Search [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
+### 3.2 - Stack and Depth First Search
+* Useful [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
 Stack, also known as LIFO, has the property of last in, first out.
 ![stack][stack1]
 
@@ -128,7 +153,8 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(V+E)$, $V$ is number of vertices, $E$ is number of edges
 
-### 3.3 - Heap and Median Median Maintenance [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure))[Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
+### 3.3 - Heap and Median Median Maintenance
+* Useful [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure))[Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
 Heap is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key (the value) of P is either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C.[1] The node at the "top" of the heap (with no parents) is called the root node.
 
 ![heap][heap1]
@@ -143,7 +169,8 @@ We can use a max heap on left side to represent elements that are less than effe
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= O(N log N)$
 
-### 3.4 - Strongly Connected Component [Link](https://en.wikipedia.org/wiki/Strongly_connected_component)
+### 3.4 - Strongly Connected Component
+* Useful [Link](https://en.wikipedia.org/wiki/Strongly_connected_component)
 A directed graph is called strongly connected if there is a path in each direction between each pair of vertices of the graph. In a directed graph G that may not itself be strongly connected, a pair of vertices u and v are said to be strongly connected to each other if there is a path in each direction between them.
 
 ![scc][scc1]
@@ -155,7 +182,8 @@ Through simple observation, we find out that tranpose of graph has the same SCCs
 <strong>Propeties</strong> <br>
 * Running Time: $T(n)= \theta(V+E)$, $V$ is number of vertices, $E$ is number of edges
 
-### 3.5 - Disjoint-set and SCC [Link](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
+### 3.5 - Disjoint-set and SCC
+* Useful [Link](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
 A disjoint-set data structure, also called a union–find data structure or merge–find set, is a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. <br>
 For a naive disjoint-set, it supports two main operations, Make-Set and Union. Make-set make every vertex an independent group. Union puts two vertices in one group.
 
@@ -193,7 +221,8 @@ As the figure shown above, we consider the cost caused by two activites that are
 <strong>Properties</strong> <br>
 * Running time is dominated by sorting
 
-### 4.2 -  Activity selection [Link](https://en.wikipedia.org/wiki/Activity_selection_problem)
+### 4.2 - Activity selection
+* Useful [Link](https://en.wikipedia.org/wiki/Activity_selection_problem)
 In this problem, every activity has its own start time and finish time. our goal is to selection a max-length subset, where jobs are compatible. <br>
 
 ![selection][selection1]
@@ -206,7 +235,8 @@ The alogirthm put the first job whose start time is bigger than last job's finis
 <strong>Properties</strong> <br>
 * The recursive activity selection running time is $T(n)= \theta(n)$
 
-### 4.3 - Huffman Coding [Link](https://en.wikipedia.org/wiki/Huffman_coding)
+### 4.3 - Huffman Coding
+* Useful [Link](https://en.wikipedia.org/wiki/Huffman_coding)
 Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. 
 For example, the table below shows letters' frequency in a "book".
 
@@ -235,7 +265,8 @@ We maintain a binary tree and create a new node as the parent for two least-freq
 <strong>Properties</strong> <br>
 * Procedure HUFFMAN produces an optimal prefix code
 
-### 4.4 - Dijkstra's Algorithm [Link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+### 4.4 - Dijkstra Algorithm
+* Useful [Link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
 Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph. However, it has one prerequisite, all paths have to be greater or equal to 0.
 
@@ -249,7 +280,8 @@ Seperate nodes into two groups, one group is marked as explored. And we update t
 <strong>Properties</strong> <br>
 * Running time  $ O(|E|+|V|\log |V|)$ based on a min-priority queue implemented by a Fibonacci heap
 
-### 4.5 - Prim's Algorithm [Link](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
+### 4.5 - Prim Algorithm
+* Useful [Link](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
 Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Very similar to Dijkstra Algorithm, we maintain two sets, explored one and unexplored one. Every time, we only absorb the vertex, which has the smallest distance to explored set. This is shown very clearly in the figure below:
 
 ![prim][prim1]
@@ -270,7 +302,8 @@ Repeat step 2 (until all vertices are in the tree). <br>
  + binary heap and adjacency list	$O((|V|+|E|)\log |V|)=O(|E|\log |V|)$
  + Fibonacci heap and adjacency list	$ O(|E|+|V|\log |V|) $
  
-### 4.6 - Kruskal's Algorithm and Clustering Problem [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
+### 4.6 - Kruskal Algorithm and Clustering Problem
+* Useful [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
 Prim's algorithm is another greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Insead of maintaining a tree like Prim, it maintains forest.
 
 ![kruskal][kruskal1]
@@ -288,7 +321,8 @@ Very similar to SCC, we can early stop the alogrithm to control number of classe
 In this section, I'm going to introducce dynamic algorithms, one powerful algorithm design strategy. <br>
 From [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming), dynamic programming (also known as dynamic optimization) is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions. 
 
-### 5.1 - Rod Cutting [Link](https://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/)
+### 5.1 - Rod Cutting
+* Useful [Link](https://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/)
 Given a rod of length n inches and an array of prices that contains prices of all pieces of size smaller than n. Determine the maximum value obtainable by cutting up the rod and selling the pieces. <br>
 The following table shows the relationship between price and length.
 
@@ -317,7 +351,8 @@ In order to save the repeated computation for small sub-problems, we memorized a
 <strong>Properties</strong> <br>
 * Time Complexity of the above implementation is O(n^2) 
 
-### 5.2 - Matrix Chain Multiplication [Link](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)
+### 5.2 - Matrix Chain Multiplication
+* Useful [Link](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)
 Matrix chain multiplication (or Matrix Chain Ordering Problem, MCOP) is an optimization problem that can be solved using dynamic programming. Given a sequence of matrices, the goal is to find the most efficient way to multiply these matrices. The problem is not actually to perform the multiplications, but merely to decide the sequence of the matrix multiplications involved.
 
 ![matrix_mul][matrix_mul1]
@@ -347,7 +382,8 @@ From CLRS, the optimal structure for this problem is:
 <strong>Properties</strong> <br>
 * Time Complexity of the above implementation is $\theta(mn)$ 
 
-### 5.4 - Floyd–Warshall Algorithm [Link](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm)
+### 5.4 - Floyd–Warshall Algorithm
+* Useful [Link](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm)
 Floyd–Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles).
 
 <strong>Key idea</strong> <br>
@@ -360,12 +396,13 @@ This algorithm is based on very intuitive observation. Suppose we have a subset 
 <strong>Properties</strong> <br>
 * Time Complexity of the above implementation is $\theta(V^3)$ 
 
-## 6 - Approximation Algorithms for NPC
+## 6.0 - Approximation Algorithms for NPC
 From From [Wikipedia](https://en.wikipedia.org/wiki/NP-completeness), an NP-complete decision problem is one belonging to both the NP and the NP-hard complexity classes. In this context, NP stands for "nondeterministic polynomial time". The set of NP-complete problems is often denoted by NP-C or NPC. <br>
 
 In this section, I am going to introduce three very famous NPC problems and explain approximation algorithms to approach them.
 
-### 6.1 - Vertex Cover [Link](https://en.wikipedia.org/wiki/Vertex_cover)
+### 6.1 - Vertex Cover
+* Useful [Link](https://en.wikipedia.org/wiki/Vertex_cover)
 A vertex cover (sometimes node cover) of a graph is a set of vertices such that each edge of the graph is incident to at least one vertex of the set. The figure below shows a minimum vertex cover (where the cover set must have at least two vertice, zero and one wouldn't help).
 
 ![cover][cover1]
@@ -382,7 +419,8 @@ It is very difficult to find a minimum vertex cover but we can find a approximat
 <strong>Properties</strong> <br>
 * APPROR-VERTEX-COVER is a polynomial-time 2-approximation algorithm.
 
-### 6.2 - Travelling Salesman Problem [Link](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+### 6.2 - Travelling Salesman Problem
+* Useful [Link](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
 The travelling salesman problem (TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" The gif shows brute force for tsp.
 
 ![bruce][bruce1]
@@ -402,7 +440,8 @@ So, Corresponding recurrence:
 <strong>Properties</strong> <br>
 * Running Time for exact algorithm: $O( n 2^n ) O(n) =O(n^2 2^n )$
 
-### 6.3 - Boolean Satisfiability Problem [Link](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
+### 6.3 - Boolean Satisfiability Problem
+* Useful [Link](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)
 Boolean satisfiability problem (sometimes called propositional satisfiability problem and abbreviated as SATISFIABILITY or SAT) is the problem of determining if there exists an interpretation that satisfies a given Boolean formula.
 
 3-SAT is one of Karp's 21 NP-complete problems, and it is used as a starting point for proving that other problems are also NP-hard. <br>
