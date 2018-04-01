@@ -146,7 +146,7 @@ And BFS is used in undirected or directed graph and it tells how many nodes a so
 <a href="#head">`Back to Top`</a>
 
 ### 3.2 - Stack and Depth First Search
-* Useful [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search)
+* Useful [Link1](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) [Link2](https://en.wikipedia.org/wiki/Depth-first_search) <br>
 Stack, also known as LIFO, has the property of last in, first out. <br>
 ![stack][stack1]
 
