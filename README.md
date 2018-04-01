@@ -164,7 +164,7 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 <a href="#head">`Back to Top`</a>
 
 ### 3.3 - Heap and Median Median Maintenance
-* Useful [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure))[Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/) <br>
+* Useful [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure)) [Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/) <br>
 Heap is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key (the value) of P is either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C.[1] The node at the "top" of the heap (with no parents) is called the root node.
 
 ![heap][heap1]
@@ -177,7 +177,7 @@ Median Maintenance problem is that if integers are read from a data stream, find
 We can use a max heap on left side to represent elements that are less than effective median, and a min heap on right side to represent elements that are greater than effective median. When the difference between size of two heaps is greater or equal to 2, we switch one element to another smaller size heap.
 
 <strong>Propeties</strong> <br>
-* Running Time: $T(n)= O(N log N)$ <br>
+* Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(N%20log%20N)) <br>
 <a href="#head">`Back to Top`</a>
 
 ### 3.4 - Strongly Connected Component
