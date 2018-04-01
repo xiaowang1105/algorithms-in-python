@@ -164,7 +164,7 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 <a href="#head">`Back to Top`</a>
 
 ### 3.3 - Heap and Median Median Maintenance
-* Useful [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure))[Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
+* Useful [Link1](https://en.wikipedia.org/wiki/Heap_(data_structure))[Link2](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/) <br>
 Heap is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key (the value) of P is either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C.[1] The node at the "top" of the heap (with no parents) is called the root node.
 
 ![heap][heap1]
@@ -195,7 +195,7 @@ Through simple observation, we find out that tranpose of graph has the same SCCs
 <a href="#head">`Back to Top`</a>
 
 ### 3.5 - Disjoint-set and SCC
-* Useful [Link](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
+* Useful [Link](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) <br>
 A disjoint-set data structure, also called a union–find data structure or merge–find set, is a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. <br>
 For a naive disjoint-set, it supports two main operations, Make-Set and Union. Make-set make every vertex an independent group. Union puts two vertices in one group.
 
@@ -282,7 +282,7 @@ We maintain a binary tree and create a new node as the parent for two least-freq
 <a href="#head">`Back to Top`</a>
 
 ### 4.4 - Dijkstra Algorithm
-* Useful [Link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+* Useful [Link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) <br>
 
 Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph. However, it has one prerequisite, all paths have to be greater or equal to 0.
 
@@ -298,7 +298,7 @@ Seperate nodes into two groups, one group is marked as explored. And we update t
 <a href="#head">`Back to Top`</a>
 
 ### 4.5 - Prim Algorithm
-* Useful [Link](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
+* Useful [Link](https://en.wikipedia.org/wiki/Prim%27s_algorithm) <br>
 Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Very similar to Dijkstra Algorithm, we maintain two sets, explored one and unexplored one. Every time, we only absorb the vertex, which has the smallest distance to explored set. This is shown very clearly in the figure below:
 
 ![prim][prim1]
@@ -372,7 +372,7 @@ In order to save the repeated computation for small sub-problems, we memorized a
 <a href="#head">`Back to Top`</a>
 
 ### 5.2 - Matrix Chain Multiplication
-* Useful [Link](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)
+* Useful [Link](https://en.wikipedia.org/wiki/Matrix_chain_multiplication) <br>
 Matrix chain multiplication (or Matrix Chain Ordering Problem, MCOP) is an optimization problem that can be solved using dynamic programming. Given a sequence of matrices, the goal is to find the most efficient way to multiply these matrices. The problem is not actually to perform the multiplications, but merely to decide the sequence of the matrix multiplications involved.
 
 ![matrix_mul][matrix_mul1]
