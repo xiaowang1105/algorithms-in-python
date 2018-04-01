@@ -1,6 +1,7 @@
 # algorithms-in-python
-In this respository, I implemented some famous alogritms using python. I arrange them according to the strategy they use. And for every algorithm, I will explain the problem they try to solve and some relevant resourses.<br>
-(The main idea for this respository is to review all these brilliant algorithms and make a beautiful README for them.) <br> <br>
+This repository, I will use Python to implement some famous algorithms. The algorithms are arranged according to the strategy used.
+Each algorithm will have an explanation to the problem it attempts to solves and some relevant resources.<br>
+(The goal of this repository is to create a beautiful README for all of these brilliant algorithms that I have reviewed.) <br> <br>
 <strong><font size=8>Content:</font></strong>
 <a id="head"/>
 * [1.0 - Divide and Conquer](#10---divide-and-conquer)
@@ -49,7 +50,7 @@ The basic step of Karatsuba's algorithm is a formula that allows one to compute 
 <strong>Propeties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=\Theta%20(n^{\log%20_{2}3})) <br>
 <a href="#head">`Back to Top`</a>
-### 1.2 - Merge Sort and Insertion Sort 
+### 1.2 - Merge Sort and Insertion Sort
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort) <br>
 Before we talk about merge sort. First take a look at another algorithm and its running time to fully appreciate how great merge sort is.
 One intuitive idea for sorting is to imitate how we arrange cards according to their size, like the picture below. We immediately arrange the card when we receive it just based on what we have on our hands.
@@ -121,7 +122,7 @@ The figure below shows how contraction works. In the sub figure left, two Bold B
 By repeating the contraction algorithm ![equation](http://latex.codecogs.com/gif.latex?T={\binom%20{n}{2}}\ln%20n) times with independent random choices and returning the smallest cut, the probability of not finding a minimum cut is
 ![equation](http://latex.codecogs.com/gif.latex?\left[1-{\binom%20{n}{2}}^{-1}\right]^{T}\leq%20{\frac%20{1}{e^{\ln%20n}}}={\frac%20{1}{n}}.) <br>
 <strong>Propeties</strong> <br>
-* With high probability we can find all min cuts in the running time of ![equation](http://latex.codecogs.com/gif.latex?O(n^{2}\ln%20^{3}n)) 
+* With high probability we can find all min cuts in the running time of ![equation](http://latex.codecogs.com/gif.latex?O(n^{2}\ln%20^{3}n))
 * Not finding a min cut probability is ![equation](http://latex.codecogs.com/gif.latex?{\frac%20{1}{n}}$%20after%20$T={\binom%20{n}{2}}\ln%20n) times. <br>
 <a href="#head">`Back to Top`</a>
 
@@ -229,7 +230,7 @@ If we sort activity by value weight/length, we can prove an existing optimal str
 
 [act1]: ./images/act1.png
 
-As the figure shown above, we consider the cost caused by two activites that are ranged differently in two arrangement (i, j). We find out that the cost in greedy alogrithm is smaller than optimal structure by the value of wi\*lj - wj\*li, which is greater than or equat to 0. 
+As the figure shown above, we consider the cost caused by two activites that are ranged differently in two arrangement (i, j). We find out that the cost in greedy alogrithm is smaller than optimal structure by the value of wi\*lj - wj\*li, which is greater than or equat to 0.
 
 <strong>Properties</strong> <br>
 * Running time is dominated by sorting <br>
@@ -252,7 +253,7 @@ The alogirthm put the first job whose start time is bigger than last job's finis
 
 ### 4.3 - Huffman Coding
 * Useful [Link](https://en.wikipedia.org/wiki/Huffman_coding) <br>
-Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. 
+Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression.
 For example, the table below shows letters' frequency in a "book".
 
 ![freq][freq1]
@@ -314,12 +315,12 @@ Repeat step 2 (until all vertices are in the tree). <br>
 
 <strong>Properties</strong> <br>
 
-* Running time 
+* Running time
  + adjacency matrix, searching	![equation](http://latex.codecogs.com/gif.latex?O(|V|^2))
  + binary heap and adjacency list	![equation](http://latex.codecogs.com/gif.latex?O((|V|+|E|)\log%20|V|)=O(|E|\log%20|V|))
  + Fibonacci heap and adjacency list	![equation](http://latex.codecogs.com/gif.latex?O(|E|+|V|\log%20|V|)) <br>
  <a href="#head">`Back to Top`</a>
- 
+
 ### 4.6 - Kruskal Algorithm and Clustering Problem
 * Useful [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) <br>
 Prim's algorithm is another greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Insead of maintaining a tree like Prim, it maintains forest.
@@ -338,7 +339,7 @@ Very similar to SCC, we can early stop the alogrithm to control number of classe
 
 ## 5.0 - Dynamic Programming
 In this section, I'm going to introducce dynamic algorithms, one powerful algorithm design strategy. <br>
-From [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming), dynamic programming (also known as dynamic optimization) is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions. 
+From [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming), dynamic programming (also known as dynamic optimization) is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions.
 
 ### 5.1 - Rod Cutting
 * Useful [Link](https://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/) <br>
@@ -380,7 +381,7 @@ Matrix chain multiplication (or Matrix Chain Ordering Problem, MCOP) is an optim
 [matrix_mul1]: ./images/matrix_mul.png
 
 <strong>Key idea</strong> <br>
-Optimal structure: 
+Optimal structure:
 
 ![mul_opt][mul_opt1]
 
