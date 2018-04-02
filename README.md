@@ -128,7 +128,7 @@ By repeating the contraction algorithm ![equation](http://latex.codecogs.com/gif
 
 ## 3.0 - Data Structures
 To place data structures as an independent section is misleading; however, I will introduce perplexing
-problems which is elegantly solved by data structures. Some data structures may have an algorithm design strategy that have not been reviewed yet.
+problems which are elegantly solved by data structures. Some data structures may have an algorithm design strategy that have not been reviewed yet.
 ### 3.1 - Queue and Breadth First Search
 * Useful [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search) <br>
 Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
@@ -231,7 +231,7 @@ If we sort activity by value weight/length, we can prove an existing optimal str
 
 [act1]: ./images/act1.png
 
-As the figure shown above, we consider the cost caused by two activites that are ranged differently in two arrangement (i, j). We find out that the cost in greedy alogrithm is smaller than optimal structure by the value of wi\*lj - wj\*li, which is greater than or equat to 0.
+As the figure shown above, we consider the cost caused by two activities that are ranged differently in two arrangement (i, j). We find out that the cost in greedy algorithm is smaller than optimal structure by the value of wi\*lj - wj\*li, which is greater than or equal to 0.
 
 <strong>Properties</strong> <br>
 * Running time is dominated by sorting <br>
@@ -247,7 +247,7 @@ In this problem, every activity has its own start time and finish time. our goal
 
 <strong>Key idea</strong> <br>
 We sorted the array according to its finish time.
-The alogirthm put the first job whose start time is bigger than last job's finish time. <br>
+The algorithm put the first job whose start time is bigger than last job's finish time. <br>
 <strong>Properties</strong> <br>
 * The recursive activity selection running time is ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(n)) <br>
 <a href="#head">`Back to Top`</a>
@@ -293,7 +293,7 @@ Dijkstra's algorithm is an algorithm for finding the shortest paths between node
 [dij1]: ./images/Dijkstra_Animation.gif
 
 <strong>Key idea</strong> <br>
-Seperate nodes into two groups, one group is marked as explored. And we update the distance from unexplored group to explored group by the shortest distance.
+Separate nodes into two groups, one group is marked as explored. And we update the distance from unexplored group to explored group by the shortest distance.
 
 <strong>Properties</strong> <br>
 * Running time ![equation](http://latex.codecogs.com/gif.latex?O(|E|+|V|\log%20|V|)) based on a min-priority queue implemented by a Fibonacci heap <br>
@@ -324,7 +324,7 @@ Repeat step 2 (until all vertices are in the tree). <br>
 
 ### 4.6 - Kruskal Algorithm and Clustering Problem
 * Useful [Link](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) <br>
-Prim's algorithm is another greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Insead of maintaining a tree like Prim, it maintains forest.
+Prim's algorithm is another greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. Instead of maintaining a tree like Prim, it maintains forest.
 
 ![kruskal][kruskal1]
 
@@ -339,7 +339,7 @@ Very similar to SCC, we can early stop the alogrithm to control number of classe
 <a href="#head">`Back to Top`</a>
 
 ## 5.0 - Dynamic Programming
-In this section, I'm going to introducce dynamic algorithms, one powerful algorithm design strategy. <br>
+In this section, I'm going to introduce dynamic algorithms, one powerful algorithm design strategy. <br>
 From [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming), dynamic programming (also known as dynamic optimization) is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions.
 
 ### 5.1 - Rod Cutting
