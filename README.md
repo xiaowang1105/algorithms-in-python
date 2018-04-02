@@ -50,14 +50,14 @@ The basic step of Karatsuba's algorithm is a formula that allows one to compute 
 <strong>Propeties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=\Theta%20(n^{\log%20_{2}3})) <br>
 <a href="#head">`Back to Top`</a>
-### 1.2 - Merge Sort and Insertion Sort
+### 1.2 - Merge Sort (and Insertion Sort)
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort) <br>
-Before we talk about merge sort. First take a look at another algorithm and its running time to fully appreciate how great merge sort is.
-One intuitive idea for sorting is to imitate how we arrange cards according to their size, like the picture below. We immediately arrange the card when we receive it just based on what we have on our hands.
+Before we discuss merge sort, the insertion sort algorithm will be analyzed and its running time to appreciate merge sort. The picture below shows the intuitive idea for sorting is to imitate how cards are arranged according to its size. When we receive a card, we immediately arrange it based on other cards in our hand.
+
 ![insert][insert1]
 
 [insert1]: ./images/insert.png
-And the worst running time for this alogorithm is ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta%20(n^{2})). <br>
+The worst running time for this algorithm is ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta%20(n^{2})). <br>
 Gif above shows how merge sort works:
 ![merge][merge1]
 
