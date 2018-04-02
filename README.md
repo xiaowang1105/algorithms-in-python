@@ -47,12 +47,12 @@ The standard procedure for multiplication of two n-digit numbers requires a numb
 
 <strong>Key idea</strong> <br>
 The basic step of Karatsuba's algorithm is a formula that allows one to compute the product of two large numbers ![equation](http://latex.codecogs.com/gif.latex?x) and ![equation](http://latex.codecogs.com/gif.latex?y) using three multiplications of smaller numbers, each with about half as many digits as ![equation](http://latex.codecogs.com/gif.latex?x) or ![equation](http://latex.codecogs.com/gif.latex?y), plus some additions and digit shifts. <br>
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=\Theta%20(n^{\log%20_{2}3})) <br>
 <a href="#head">`Back to Top`</a>
 ### 1.2 - Merge Sort (and Insertion Sort)
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort) <br>
-Before we discuss merge sort, the insertion sort algorithm will be analyzed and its running time to appreciate merge sort. The picture below shows the intuitive idea for sorting which is to imitate how cards are arranged according to its size. When we receive a card, we immediately arrange it based on other cards in our hand.
+Before we discuss merge sort, the insertion sort algorithm will be analyzed and its running time to appreciate merge sort. The picture below shows the intuitive idea for sorting is to imitate how cards are arranged according to its size. When we receive a card, we immediately arrange it based on other cards in our hand.
 
 ![insert][insert1]
 
@@ -65,7 +65,7 @@ Gif above shows how merge sort works:
 
 <strong>Key idea</strong> <br>
 Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted) and repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.<br>
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})) <br>
 <a href="#head">`Back to Top`</a>
 ### 1.3 - Count Inversions
@@ -77,7 +77,7 @@ Actually, this can be treated as application of Merger Sort. Every time we do me
 <strong>Key idea</strong> <br>
 Like the figure above, when we first take in element from right sub-array in merge operation, that indicates the right element is smaller than ( length of left sub-array - the index of left element) elements. <br>
 As the algorithm progresses, add all the inversions will give us the total inversions.<br>
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(n{\log%20n})) <br>
 <a href="#head">`Back to Top`</a>
 
@@ -85,7 +85,7 @@ As the algorithm progresses, add all the inversions will give us the total inver
 * Useful [Link](https://en.wikipedia.org/wiki/Maximum_subarray_problem) <br>
 The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array, a[1...n], of numbers which has the largest sum. <br>
 <strong>Key idea</strong> <br>
-If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calcualte. A[i..j] has to be one of the three cases:<br>
+If we use the divide and conquer strategy, if the array is A[low..high] and the middle point is represented as mid. A[i..j]is what we want to calculate. A[i..j] has to be one of the three cases:<br>
 - A[i..j] belongs to A[low..mid]
 - A[i..j] belongs to A[mid+1..high]
 - i <= mid < j <br>
@@ -93,7 +93,7 @@ So, our job is to find the largest sub array crossing the mid point and choose t
 ![cross][cross1]
 
 [cross1]: ./images/max_crossing1.png
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(n{\lg%20n})) <br>
 <a href="#head">`Back to Top`</a>
 
@@ -106,7 +106,7 @@ This section I will talk about two algorithms which has used random variable ins
 [quick1]: ./images/Sorting_quicksort_anim.gif
 <strong>Key idea</strong> <br>
 Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements relative to a randomly chosen element. Quicksort can then recursively sort the sub-arrays. So, the key point in quick sort is to choose partition element. <br>
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Worst case performance	O(n^2)
 * Best case performance	O(n log n) or O(n) with three-way partition
 * Average case performance	O(n log n) <br>
@@ -121,13 +121,14 @@ The figure below shows how contraction works. In the sub figure left, two Bold B
 <strong>Key idea</strong> <br>
 By repeating the contraction algorithm ![equation](http://latex.codecogs.com/gif.latex?T={\binom%20{n}{2}}\ln%20n) times with independent random choices and returning the smallest cut, the probability of not finding a minimum cut is
 ![equation](http://latex.codecogs.com/gif.latex?\left[1-{\binom%20{n}{2}}^{-1}\right]^{T}\leq%20{\frac%20{1}{e^{\ln%20n}}}={\frac%20{1}{n}}.) <br>
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * With high probability we can find all min cuts in the running time of ![equation](http://latex.codecogs.com/gif.latex?O(n^{2}\ln%20^{3}n))
 * Not finding a min cut probability is ![equation](http://latex.codecogs.com/gif.latex?{\frac%20{1}{n}}$%20after%20$T={\binom%20{n}{2}}\ln%20n) times. <br>
 <a href="#head">`Back to Top`</a>
 
 ## 3.0 - Data Structures
-It may be misleading to put data structure as a independent section. However, I want to introduce some kind of complicate problems which can be solved so elegantly using proper data strutures. Of course, they may contain some algorithm design strategies that are not talked about yet.
+To place data structures as an independent section is misleading; however, I will introduce perplexing
+problems which is elegantly solved by data structures. Some data structures may have an algorithm design strategy that have not been reviewed yet.
 ### 3.1 - Queue and Breadth First Search
 * Useful [Link1](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) [Link2](https://en.wikipedia.org/wiki/Breadth-first_search) <br>
 Queue, also known as FIFO, is an acronym for first in, first out, a method for organizing and manipulating a data buffer, where the oldest (first) entry, or 'head' of the queue, is processed first.
@@ -142,7 +143,7 @@ And BFS is used in undirected or directed graph and it tells how many nodes a so
 
 [bfs1]: ./images/Animated_BFS.gif
 
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: T(n)= O(V+E), V is number of vertices, E is number of edges <br>
 <a href="#head">`Back to Top`</a>
 
@@ -160,7 +161,7 @@ And DFS is used in directed graph and it tells how many nodes a source node can 
 
 [depth1]: ./images/Depth-First-Search.gif
 
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: T(n)= O(V+E), V is number of vertices, E is number of edges <br>
 <a href="#head">`Back to Top`</a>
 
@@ -177,7 +178,7 @@ Median Maintenance problem is that if integers are read from a data stream, find
 <strong>Key idea</strong> <br>
 We can use a max heap on left side to represent elements that are less than effective median, and a min heap on right side to represent elements that are greater than effective median. When the difference between size of two heaps is greater or equal to 2, we switch one element to another smaller size heap.
 
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20O(N%20log%20N)) <br>
 <a href="#head">`Back to Top`</a>
 
@@ -191,7 +192,7 @@ A directed graph is called strongly connected if there is a path in each directi
 
 <strong>Key idea</strong> <br>
 Through simple observation, we find out that tranpose of graph has the same SCCs as the original graph. We run DFS twice. First time, we run it on G and compute finishing time for each vertex. And then, we run DFS on G^T but in the main loop of DFS, consider the vertices in order of decreasing finishing time. <br>
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * Running Time: ![equation](http://latex.codecogs.com/gif.latex?T(n)=%20\theta(V+E)), V is number of vertices, E is number of edges <br>
 <a href="#head">`Back to Top`</a>
 
@@ -213,7 +214,7 @@ In an undirected graph, we can use this data structure to find out how many SCCs
 
 
 
-<strong>Propeties</strong> <br>
+<strong>Properties</strong> <br>
 * We can use a weighted-union heuristic to save time when call find_set operation
 * Path compression can greatly improve time efficiency of union find <br>
 <a href="#head">`Back to Top`</a>
