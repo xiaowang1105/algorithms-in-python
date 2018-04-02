@@ -52,7 +52,7 @@ The basic step of Karatsuba's algorithm is a formula that allows one to compute 
 <a href="#head">`Back to Top`</a>
 ### 1.2 - Merge Sort (and Insertion Sort)
 * Useful [Link](https://en.wikipedia.org/wiki/Merge_sort) <br>
-Before we discuss merge sort, the insertion sort algorithm will be analyzed and its running time to appreciate merge sort. The picture below shows the intuitive idea for sorting is to imitate how cards are arranged according to its size. When we receive a card, we immediately arrange it based on other cards in our hand.
+Before we discuss merge sort, the insertion sort algorithm will be analyzed and its running time to appreciate merge sort. The picture below shows the intuitive idea for sorting which is to imitate how cards are arranged according to its size. When we receive a card, we immediately arrange it based on other cards in our hand.
 
 ![insert][insert1]
 
