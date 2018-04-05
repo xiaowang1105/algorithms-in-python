@@ -137,7 +137,7 @@ Queue, also known as FIFO, is an acronym for first in, first out, a method for o
 [queue1]: ./images/Fifo_queue.png
 
 <strong>Key idea</strong> <br>
-And BFS is used in undirected or directed graph and it tells how many nodes a source node can reach and print them out by the order we find them. We use queue to store the nodes we color grey(see the gif below). As for the "breadth" in its name, it means we try to find a reachable node using the shortest length. And the border between visited nodes and undiscovered nodes is extended by its breadth.
+BFS is used to count reachable nodes from a source node in a undirected or directed graph. Reachable nodes are printed in the order found. A queue is used to store the nodes colored grey (see the gif below). The term "breadth" in BFS means finding a reachable node with the shortest length. The breadth extends the border between the visited nodes and the undiscovered nodes.
 
 ![bfs][bfs1]
 
